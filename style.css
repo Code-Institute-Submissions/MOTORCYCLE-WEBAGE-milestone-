@@ -5,14 +5,20 @@ body{
 	background-color:#003145;
 	font-size:20px;
 	height:100px;
+	border-bottom:2px solid white;
 }
 .nav-link {
 	color:white;
 	margin:15px;
 }
 h1{
-	color:rgb(70, 248, 54);
+	color:#d8db38;
 	margin:10px;
+}
+.warranty{
+	position: absolute;
+	z-index:1;
+	top:98px;
 }
 .carousel-inner{
 	height:80vh;
@@ -35,17 +41,10 @@ h1{
 	border-top:2px solid white;
 	text-align: center; 
 }
+
 .about-us{
 	text-align: center;
 	padding-top:20px;
-}
-.showcase{
-	display:flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	/* display:none; */
-	
 }
 .showcase > img{
 	width:500px;
@@ -61,10 +60,17 @@ h1{
 .overflow{
 	width:20px;
 }
-
-
-
-
+.dyno-logo{
+	display:block;
+	margin:auto;
+}
+#dyno-banner{
+	width:100%;
+	height:300px;
+}
+.second-carousel img{
+	height:250px;
+}
 
 
 
