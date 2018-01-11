@@ -66,7 +66,7 @@ h1{
 }
 #dyno-banner{
 	width:100%;
-	height:300px;
+	height:250px;
 }
 .second-carousel img{
 	height:250px;
@@ -124,7 +124,7 @@ padding-top:20px;
 	min-height:50px;
 	width:auto;	
 }
-select {
+.used-form select {
   margin:10px 50px;
   font-size:25px;
   padding:5px 15px;
@@ -132,8 +132,14 @@ select {
   border:none;
   font-family:'Roboto', sans-serif;
 }
-form{
+.used-form{
 	text-align:center;
+}
+.used-form select:hover{
+	cursor: pointer;
+	background-color:#003145;
+	color:#ffff;
+
 }
 article section div img{
 	width:450px;
@@ -198,11 +204,55 @@ article section div img{
 /* start of contact */
 
 #map{
-    height: 600px;
-	width: 600px;
+    height: 400px;
+	width: 400px;
+	margin:10px 0 0 150px;
+	float:left;
+}
+.contact-wrapper{
+	position:relative;
+	display:flex;
+	flex-direction:column; 
+}
+.contact-wrapper h3{
+	margin:10px 60px;
+}
+.contact-wrapper form{
+	margin:10px 40px;
 }
 /* end of contact */
+/* footer start */
+footer div{
+	background-color:#f4f4f4;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:baseline;
+	margin:10px 40px;
+}
+footer div ul li{
+	list-style:none;
+	margin:2px;
+	font-size:20px;
+}
+footer div ul {
+	margin-top:10px; 
+}
+footer div h3{
+	margin-bottom:15px;
+}
+footer{
+	max-height:200px;
+}
+footer input{
+	border-radius:10px;
+}
+footer label{
+	font-size:20px;
+}
 
+/* end of footer */
 
 
 
