@@ -56,7 +56,7 @@
     <article class="used-wrapper">
         <section>
             <img class="service-img" src="photos/servicebackground.jpg" alt="service background">
-            <div class="container service-background">
+            <div class="container-fluid service-background">
                     <h2>Hampshire Motorcycles Service and Aftersales Department</h2>
                 <p>We have a dedicated team of manufacturer-trained technicians, who offer the utmost friendly and professional service. Each
                 technician attends regular training to ensure they are fully up to date with specifications of each manufacturer, so you
@@ -66,7 +66,7 @@
                 of service we provide. As an Insurance Approved repairer, we provide a free estimation service, so if you have recently had
                 an accident and are seeking a quotation, don’t hesitate to contact us. Our services include:
                 </p>
-                <div class="container ul-list">
+                <div class="container ul-list flex-row flex-wrap">
                     <ul class="services-panel1">
                         <li>Servicing</li>
                         <li>Repairs</li>
@@ -82,67 +82,83 @@
                         <li>Accident damage repairs</li>
                     </ul>
                 </div>
-                <div class="container service-banner">
+            </div>
+        <div class="d-flex p-2">
+            <div class="row services-backing">
+                <h2>Engine tuning</h2> 
+                <div class="col-lg-12 flex-row flex-wrap">
                     <img src="photos/engine /clutch.jpg" alt="clutch">
+                    <p class="services-para">A massive range of brand new models.New Suzuki Motorcycles come with a free 36 month
+                    </p>
+                </div>
+                <h2>Suspension setup</h2>
+                <div class="col-lg-12 d-flex flex-row-reverse flex-wrap">
                     <img src="photos/engine /variable_timing.jpg" alt="timing">
-                    <img src="photos/engine /engine.jpg" alt="engine">
+                    <p class="services-para">
+                    n of Used Motorcycles. All used motorcycles come with our 1 year Warranty. Call for any questions
+                
+                    </p>
+                </div>
+                <h2>Power commander</h2>
+                <div class="col-lg-12 flex-row flex-wrap">
+                     <img src="photos/engine /engine.jpg" alt="engine">
+                    <p class="services-para">A massive range of brand new models.New Suzuki Motorcycles come with a free 36 month warranty.
+                       
+                    </p>
                 </div>
             </div>
-           
         </section>
     </article>
     <footer>
-        <div class="container footer-background">
-            <div>
-                <ul>
-                    <li>
-                        <h3>Contact us</h3>
-                    </li>
-                    <li>Hampshire Motorcycles</li>
-                    <li>20 the hornet</li>
-                    <li>Hampshire</li>
-                    <li>Po9 2uj</li>
-                    <li>02392 998334</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Opening Hours</h3>
-                    </li>
-                    <li>Monday 8.30 - 5.30</li>
-                    <li>Tuesday 8.30 - 5.30</li>
-                    <li>Wednesday 8.30 - 5.30</li>
-                    <li>Thursday 8.30 - 5.30</li>
-                    <li>Friday 8.30 - 5.30</li>
-                    <li>Saturday 8.30 - 5.30</li>
-                    <li>Sunday - closed</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Social Media</h3>
-                    </li>
-                    <li>
+        <div class="container-fluid footer-background">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul>
+                        <li>
+                            <h3>Contact us</h3>
+                        </li>
+                        <li>Hampshire Motorcycles</li>
+                        <li>20 the hornet</li>
+                        <li>Hampshire</li>
+                        <li>Po9 2uj</li>
+                        <li>02392 998334</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li>
+                            <h3>Opening Hours</h3>
+                        </li>
+                        <li>Monday 8.30 - 5.30</li>
+                        <li>Tuesday 8.30 - 5.30</li>
+                        <li>Wednesday 8.30 - 5.30</li>
+                        <li>Thursday 8.30 - 5.30</li>
+                        <li>Friday 8.30 - 5.30</li>
+                        <li>Saturday 8.30 - 5.30</li>
+                        <li>Sunday - closed</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Social Media</h3>
+                    <span>
                         <a href="#" class="fa fa-facebook"></a>
-                    </li>
-                    <li>
+                    </span>
+                    <span>
                         <a href="#" class="fa fa-twitter"></a>
-                    </li>
-                    <li>
+                    </span>
+                    <span>
                         <a href="#" class="fa fa-instagram"></a>
-                    </li>
-                </ul>
+                    </span>
+                </div>
+                <div class="col-lg-3">
+                    <form action="" method="">
+                        <label>Subscribe to our newsletter</label>
+                        <br>
+                        <input type="email" id="email" placeholder="Email">
+                        <input class="btn-sm btn-info" type="submit" value="Subscribe">
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <form action="" method="">
-                <label>Subscribe to our newsletter</label>
-                <br>
-                <input type="email" id="email" placeholder="Email">
-                <input type="submit" value="Subscribe">
-            </form>
         </div>
         <p>&copy; Russell Treagus</p>
     </footer>

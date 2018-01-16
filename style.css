@@ -1,6 +1,9 @@
 body{
 	margin:0;
 }
+.spacer{
+    margin-top:100px;
+}
 /* navbar section */
 .navbar{
 	background-color:#003145;
@@ -9,22 +12,33 @@ body{
 	border-bottom:2px solid white;
 }
 .nav-link {
-	color:white;
+	background-color:#003145;
 	margin:15px;
+}
+.nav-item > a{
+	color:#ffff;
 }
 h1{
 	color:#d8db38;
 	margin:10px;
 }
+
+.navbar-toggler{
+	background-color:white;
+}
+.navbar-toggler-icon{
+	background-color:black;
+}
+
 /* end of navbar */
 /* index page start */
 .warranty{
 	position: absolute;
 	z-index:1;
-	top:98px;
+	top:100px;
 }
 .carousel-inner{
-	height:80vh;
+	height:450px;
 	width:100%;
 }
 .carousel-caption{
@@ -32,10 +46,9 @@ h1{
 	top:200px;
 }
 .img_slide{
-	width:100%;
 	position:absolute;
-	top:-100px;
 	opacity:0.9;
+	
 }
 .first_advertise{
 	background-color:#00425c;
@@ -49,9 +62,7 @@ h1{
 	text-align: center;
 	padding-top:20px;
 }
-.showcase > img{
-	width:500px;
-}
+
 .showcase-button{
 	text-align: center;
 	background-color:#f4f4f4;
@@ -71,26 +82,41 @@ h1{
 .second-carousel img{
 	height:250px;
 }
+.first-description{
+	position:relative;
+	height:200px;
+}
+.btn{
+	position: absolute;
+	bottom:15px;
+	left:300px;
+	border:2px #fff solid; 
+}
+/* .suspension-logo{
+	
+}
+.suspension{
+	
+	background-size:contain;
+} */
+
 /* end of index page */
 /* start new suzuki */
-.spacer{
-    margin-top:105px;
-}
+
 .section-one{
 	text-align:center;
-	border-top:2px solid #003145;
 }
-.section-one > span {
+.bike-background > span {
     display:inline-block;
-    width:100%;
-    font-size:40px;
-    background-color:rgba(0, 50, 69, 0.5);
+	width:100%;
+	font-size:150px;
+	position: absolute;
+	left:0px;
+	color:rgba(0, 50, 69, 0.10);
+
 }
 .sports-background{
-    border-top:2px solid #003145;
-	border-bottom:2px solid #003145;
-	margin-left:-400px;
-	
+	width:100%;
 }
 .new-suzuki-tiles{
     display:flex;
@@ -98,14 +124,18 @@ h1{
 	list-style-type: none;
 }
 .new-suzuki-tiles li span{
-	font-size:25px;
-	font-family: 'Roboto', sans-serif;
+	font-size:55px;
+	font-family: 'Amatic SC', cursive;
 }
 .new-suzuki-tiles li{
-padding-top:20px;
+	padding-top:40px;
+	z-index:1;	
 }
 .new-suzuki-tiles img{
 	height:350px;
+}
+.first-divider{
+	background-color:#003145;
 }
 /* end of suzuki page */
 /* start of used bikes */
@@ -159,10 +189,11 @@ article section div img{
 	height:400px;
 }
 .service-background{
-	width:auto;
-	height:100%;
+	height:475px;
 	background-color:#003145;
-	color:#ffff;
+	color:#ffffff;
+	border-top:2px #fff solid;
+	
 }
 .services-panel1{
 	margin-left:150px;
@@ -174,28 +205,23 @@ article section div img{
 }
 .service-background h2{
 	text-align:center;
-	margin-top:10px;
-	padding-top:40px;
+	padding-top:20px;
 }
 .service-background p{
 	text-align:center;
-	padding-top:25px;
-	margin:40px 20px 20px 20px;
+	padding-top:10px;
+	margin:20px 0;
 }
-.service-banner{
-	display:flex;
-	justify-content: center;
-	
-}
+
 .service-banner img{
 	width:300px;
 	height:300px;
-	margin:20px 2px;
 }
 .ul-list{
 	padding:20px 0;
 	margin-top:20px;
 }
+
 /* end of services */
 /* start of shop */
 
@@ -224,26 +250,19 @@ article section div img{
 /* footer start */
 footer div{
 	background-color:#f4f4f4;
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-	justify-content:center;
-	align-items:baseline;
-	margin:10px 40px;
+
+}
+.footer-background{
+
 }
 footer div ul li{
 	list-style:none;
 	margin:2px;
-	font-size:20px;
+	font-size:15px;
 }
-footer div ul {
-	margin-top:10px; 
-}
+
 footer div h3{
-	margin-bottom:15px;
-}
-footer{
-	max-height:200px;
+	margin-bottom:5px;
 }
 footer input{
 	border-radius:10px;
