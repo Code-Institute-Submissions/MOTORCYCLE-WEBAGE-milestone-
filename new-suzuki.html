@@ -20,8 +20,6 @@
 <body>
     <header>
         <!-- NAVBAR START -->
-    
-        <h1 id="main-logo">Hampshire Motorcycles</h1>
         <nav class="navbar navbar-expand-md fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +29,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
+                    <li>
+                        <span id="main-logo">Hampshire Motorcycles</span>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -59,90 +60,115 @@
         <div class="bike-background">
             <span class="bike-display">Sports Bikes</span>
             <div class="sports-background">
-                <ul class="container new-suzuki-tiles">
-                    <li>
-                        <img src="photos/sportsbike/gsxr600.png" alt="">
-                        <span>GSXR600</span>
-                    </li>
-                    <li>
-                        <img src="photos/sportsbike/gsxr750.png" alt="">
-                        <span>GSXR750</span>
-                    </li>
-                    <li>
-                        <img src="photos/sportsbike/gsxr1000.png" alt="">
-                        <span>GSXR1000</span>
-                    </li>
-                    <li>
+                <div class="container new-suzuki-tiles"> 
+                    <div class="tiles-background d-flex flex-wrap justify-content-center">
+                        <span>
+                            <img src="photos/sportsbike/gsxr600.png" alt="">
+                            <br>
+                            GSXR600
+                        </span>
+                        <span>
+                            <img src="photos/sportsbike/gsxr750.png" alt="">
+                            <br>
+                            GSXR750
+                        </span>  
+                        <span>
+                        <img class="active" src="photos/sportsbike/gsxr1000.png" alt="">
+                            <br>
+                             GSXR1000
+                        </span>
+                        <span>
                         <img src="photos/sportsbike/gsxr1000r.png" alt="">
-                        <span>GSXR1000r</span>
-                    </li>
-                    <li>
-                        <img src="photos/sportsbike/hayabusa.png" alt="">
-                        <span>HAYABUSA</span>
-                    </li>
-                    <li>
+                            <br>
+                             GSXR1000r
+                        </span>
+                        <span>
+                            <img src="photos/sportsbike/hayabusa.png" alt="">
+                            <br>
+                            HAYABUSA
+                        </span>
+                        <span>
                         <img src="photos/sportsbike/hayabusaz.png" alt="">
-                        <span>HAYABUSA-Z</span>
-                    </li>
-                </ul>
+                            <br>
+                            HAYABUSA-Z
+                        </span>
+                    </div>
+                 </div>
             </div>    
         </div>
+        <hr class="divider">
         <div class="bike-background">
             <span class="bike-display">Adventure bikes</span>
-            <div class="sports-background">
-                <ul class="container new-suzuki-tiles">
-                    <li>
-                        <img src="photos/adventurebikes/dl250.png" alt="dl250">
-                        <span>DL250</span>
-                    </li>
-                    <li>
-                        <img src="photos/adventurebikes/dl650.png" alt="dl650">
-                        <span>DL650</span>
-                    </li>
-                    <li>
-                        <img src="photos/adventurebikes/dl650xt.png" alt="dl650xt">
-                        <span>DL650XT</span>
-                    </li>
-                    <li>
-                        <img src="photos/adventurebikes/dl1000gt.png" alt="dl1000gt">
-                        <span>DL1000GT</span>
-                    </li>
-                    <li>
-                        <img src="photos/adventurebikes/dl1000x.png" alt="dl1000x">
-                        <span>DL1000X</span>
-                    </li>
-                    <li>
-                        <img src="photos/adventurebikes/dl1000xt.png" alt="dl1000xt">
-                        <span>DL1000XT</span>
-                    </li>
-                </ul>
-            </div>    
+                <div class="sports-background">
+                    <div class="container new-suzuki-tiles">
+                        <div class="tiles-background d-flex flex-wrap flex-wrap justify-content-center">
+                            <span>
+                                <img src="photos/adventurebikes/dl250.png" alt="dl250">
+                                <br>
+                                 DL250
+                            </span>
+                            <span>
+                                <img src="photos/adventurebikes/dl650.png" alt="dl650">
+                                <br>
+                                DL650
+                            </span>
+                            <span>
+                                <img class="active" src="photos/adventurebikes/dl650xt.png" alt="dl650xt">
+                                <br>
+                                DL650XT
+                            </span>
+                            <span>
+                                <img src="photos/adventurebikes/dl1000gt.png" alt="dl1000gt">
+                                <br>
+                                DL1000GT
+                            </span>
+                            <span>
+                                <img src="photos/adventurebikes/dl1000x.png" alt="dl1000x">
+                                <br>
+                                DL1000X
+                            </span>
+                            <span>
+                                <img src="photos/adventurebikes/dl1000xt.png" alt="dl1000xt">
+                                <br>
+                                DL1000XT
+                            </span>
+                        </div>
+                    </div>      
+                </div>    
         </div>
+        <hr class="divider">
         <div class="bike-background">
             <span class="bike-display">Street bikes</span>
             <div class="sports-background">
-                <ul class="container new-suzuki-tiles">
-                    <li>
-                        <img src="photos/streetbikes/gsx-s125.png" alt="gsx-s125">
-                        <span>GSX-S125</span>
-                    </li>
-                    <li>
-                        <img src="photos/streetbikes/gsx-s750.png" alt="gsx-s750">
-                        <span>GSX-S750</span>
-                    </li>
-                    <li>
-                        <img src="photos/streetbikes/gsx-ss.png" alt="gsx-s1000">
-                        <span>GSX-S 1000</span>
-                    </li>
-                    <li>
-                        <img src="photos/streetbikes/phantom.png" alt="phantom">
-                        <span>GSX-S PHANTOM</span>
-                    </li>
-                    <li>
-                        <img src="photos/streetbikes/sv650.png" alt="sv650">
-                        <span>SV650</span>
-                    </li>
-                </ul>
+                <div class="container new-suzuki-tiles">
+                    <div class=" tiles-background d-flex flex-wrap justify-content-center">
+                        <span>
+                            <img src="photos/streetbikes/gsx-s125.png" alt="gsx-s125">
+                            <br>
+                            GSX-S125
+                        </span>
+                        <span>
+                            <img src="photos/streetbikes/gsx-s750.png" alt="gsx-s750">
+                            <br>
+                            GSX-S750
+                        </span>
+                        <span>
+                            <img class="active" src="photos/streetbikes/gsx-ss.png" alt="gsx-s1000">
+                            <br>
+                            GSX-S 1000
+                        </span>
+                        <span>
+                            <img src="photos/streetbikes/phantom.png" alt="phantom">
+                            <br>
+                            GSX-S PHANTOM
+                        </span>
+                        <span>
+                            <img src="photos/streetbikes/sv650.png" alt="sv650">
+                            <br>
+                            SV650
+                        </span>
+                    </div>
+                </div>
             </div>    
         </div>
       
