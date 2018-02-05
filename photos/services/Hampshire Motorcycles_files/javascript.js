@@ -15,19 +15,4 @@ function initMap() {
 }
 // index page animation 
 
-// tiles-background-img
-
-// modal selector
-
-// modalbackingactive
-// modaldescriptionactive
-
-const bikeImage = document.querySelectorAll(".tiles-background");
-
-function bikeAppear(e){
-   
-};
-
-bikeImage.forEach(span => span.addEventListener('mouseover', bikeAppear));
-
 

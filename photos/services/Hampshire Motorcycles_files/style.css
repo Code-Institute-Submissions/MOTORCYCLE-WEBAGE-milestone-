@@ -130,14 +130,8 @@ body {
 	background-color:#003145;
 }
 /* modal / finance calc */
-.modal-backing-active {
-	display:block;
-}
-.modal-description-active{
-	transition: 0.3s;
-	opacity: 1;
-}
 .modal-backing {
+	box-sizing:content-box;
 	display:none;
 }
 
@@ -147,7 +141,7 @@ body {
 	border-radius:15px;
 	width:650px;
 	height:500px;
-	opacity:0;
+	opacity: 0;
 }	
 .model-description p{
 	margin:0;

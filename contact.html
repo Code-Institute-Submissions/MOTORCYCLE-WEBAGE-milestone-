@@ -17,64 +17,60 @@
     </head>
 
     <body>
-            <header>
-                <!-- NAVBAR START -->
-            
-                <nav class="navbar navbar-expand-md fixed-top">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span></span>
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav mr-auto">
-                            <li id="main-logo">
-                                Hampshire Motorcycles
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="new-suzuki.html">New Suzuki</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="used-motorcycles.html">Used Motorcycles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="online-store.html">Online Store</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact / Find Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a id="main-logo" class="navbar-brand" href="#">Hampshire Motorcycles</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="new-suzuki.html">New Suzuki</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="used-motorcycles.html">Used Motorcycles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="online-store.html">Online Store</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
     <!-- NAVBAR END -->
-        <div class="spacer"></div>
-        <div id="map"></div>
-        <section class="container contact-wrapper">
-            <div class="row">
-                <div class=" form-contact col-lg-12">
-                    <h3>Contact Us</h3>
-                        <form action="" method="">
-                            <label>Department</label>
+    <section>
+        <div class="d-flex p-2 flex-row justify-content-center flex-wrap">
+            <div id="map"></div>
+                <div class=" form-contact d-flex p-2 flex-row flex-wrap">
+                    <form action="" method="">
+                            <h3>Contact Us</h3>
+                            <label>Department :</label>
                                 <select>
                                     <option value="Sales">Sales</option>
                                     <option value="Parts">Parts</option>
                                     <option value="Clothing">Clothing</option>
                                     <option value="Service">Service</option> 
                                 </select>
-                            <br>
-                                <label>Your Name :</label>
-                                    <input type="text" id="" placeholder="Your Name">
                                 <br>
-                                    <label>Email :</label>
-                                <br>    
+                                    <label>First Name :</label>
+                                    <input type="text" id="" placeholder="First Name">
+                                <br>
+                                    <label>Last Name :</label>
+                                    <input type="text" id="" placeholder="Last Name">
+                                <br>
+                                    <label>Email :</label>   
                                     <input type="email" id="email" placeholder="Email">
                                 <br>
                                     <label>Your Number :</label>
@@ -86,13 +82,18 @@
                                     <label>Message :</label>
                                 <br>
                                     <textarea rows="4" cols="50">
-                                </textarea>
-                            <br>
+                                    </textarea>
+                                <br>
                                 <input type="submit" value="Submit">
-                        </form>
-                </div>
+                    </form>
+                </div>        
             </div>
-        </section>
+        </div>
+    </section>
+        
+
+
+
     <footer>
         <div class="container-fluid footer-background">
             <div class="row footer-content">
@@ -156,8 +157,8 @@
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
     crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfv5_7XswUyFVBgrd0Lh4byF8x0oq11xo&callback=initMap"></script> 
     <script type="text/javascript" src="js/javascript.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfv5_7XswUyFVBgrd0Lh4byF8x0oq11xo&callback=initMap"></script> 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
 </body>
