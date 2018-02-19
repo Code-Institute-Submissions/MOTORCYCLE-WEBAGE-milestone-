@@ -1,291 +1,319 @@
-*{
-	outline:none !important;
+* {
+  outline: none !important;
 }
 body {
-	margin:0;
-	background-color:#f4f4f4;
+  margin: 0;
+  background-color: #f4f4f4;
 }
+
 /* navbar section */
 .navbar {
-	background-color:#003145;
-	height:80px;
-	border-bottom:2px solid white;
-	z-index:17;
+  background-color: #003145;
+  height: 80px;
+  border-bottom: 2px solid white;
+  z-index: 17;
 }
 .navbar-nav {
-	background-color:#003145;
+  background-color: #003145;
 }
 .nav-link {
-	font-size:1.0em;
-	color:#fff;
+  font-size: 1em;
+  color: #fff;
 }
 .nav-item {
-	margin:2px 5px;
+  margin: 2px 5px;
 }
-.nav-item a{
-	border-bottom:3px solid #003145;
+.nav-item a {
+  border-bottom: 3px solid #003145;
 }
-.nav-item a:hover{
-	border-bottom-color: #fff;
+.nav-item a:hover {
+  border-bottom-color: #fff;
 }
-.collapse{
-	padding:0;
+.collapse {
+  padding: 0;
 }
 
 /* end of navbar */
 /* index page start */
 
 #main-logo {
-	color:#d8db38;
-	font-size:1.8em;
-	margin-right:10px;
-	text-align:center;
-	
+  color: #d8db38;
+  font-size: 1.8em;
+  margin-right: 10px;
+  text-align: center;
 }
-.carousel-caption > h5{
-	padding-bottom:8%;
+.carousel-caption > h5 {
+  padding-bottom: 8%;
 }
-.carousel-item{
-	max-height:400px;
+.carousel-item {
+  max-height: 400px;
 }
 .warranty {
-	position: absolute;
-	z-index:1;
-	top:80px;
-	left:7%;
-	width:12%;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  left: 7%;
+  width: 12%;
 }
 .first-advertise {
-	background-color:#00425c;
-	color:white;
-	padding-top:20px;
-	border-top:2px solid white;
-	text-align: center; 
+  background-color: #00425c;
+  color: white;
+  padding-top: 20px;
+  border-top: 2px solid white;
+  text-align: center;
 }
-.first-advertise h2{
-	color: #d8db38;
+.first-advertise h2 {
+  color: #d8db38;
 }
 
 .about-us {
-	text-align: center;
-	padding-top:20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .showcase-button {
-	text-align: center;
-	background-color:#f4f4f4;
+  text-align: center;
+  background-color: #f4f4f4;
 }
 .dyno-logo {
-	display:block;
-	margin:auto;
+  display: block;
+  margin: auto;
 }
 #dyno-banner {
-	width:100%;
-	height:300px;
+  width: 100%;
+  height: 300px;
 }
 .second-carousel img {
-	height:300px;
+  height: 300px;
 }
 
 .btn {
-	display:inline-block;
-	border:2px #fff solid; 
+  display: inline-block;
+  border: 2px #fff solid;
 }
 
 /* end of index page */
 /* start new suzuki */
 
 .section-one {
-	text-align:center;
-	
+  text-align: center;
 }
-.tiles-background{
-	padding-top:30px;
+.tiles-background {
+  padding-top: 30px;
 }
 .bike-background > span {
-	width:100%;
-	font-size:150px;
-	position: absolute;
-	left:0px;
-	color:rgba(0, 50, 69, 0.10);
-	-webkit-text-stroke-width: 0.5px;
-   -webkit-text-stroke-color:#00028456;
-}	
+  width: 100%;
+  font-size: 150px;
+  position: absolute;
+  left: 0px;
+  color: rgba(0, 50, 69, 0.1);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #00028456;
+}
 
 .new-suzuki-tiles img {
-	height:250px;
+  height: 250px;
 }
 
 .new-suzuki-tiles {
-	margin:auto;
-	z-index:1;
-	padding-top:60px;	
+  margin: auto;
+  z-index: 1;
+  padding-top: 60px;
 }
 .new-suzuki-tiles span {
-	font-size:45px;
-	font-family: 'Amatic SC', cursive;	
+  font-size: 45px;
+  font-family: "Amatic SC", cursive;
 }
 
 .first-divider {
-	background-color:#003145;
-}
-/* modal / finance calc */
-.modal-backing-active {
-	display:block;
-}
-.modal-description-active{
-	transition: 0.3s;
-	opacity: 1;
-}
-.modal-backing {
-	display:none;
+  background-color: #003145;
 }
 
-.model-description {
-	background-color:#f4f4f4;
-	border:0.5px solid #bbb7b7;
-	border-radius:15px;
-	width:650px;
-	height:500px;
-	opacity:0;
-}	
-.model-description p{
-	margin:0;
-	padding:0;
+/* modal / finance calc */
+.trigger-enter .bike-description {
+  display: block;
 }
-.finance-calc {
-	background-color:pink;
-	width:325px;
-	height:300px;
+
+.trigger-enter-active .bike-description {
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.bike-description {
+  background-color: #f4f4f4;
+  border: 0.5px solid #bbb7b7;
+  border-radius: 15px;
+  font-size: 0.5em;
+  width: 300px;
+  opacity: 0;
+  display: none;
+}
+.slide-backing {
+  justify-content: space-around;
+}
+.slideIn{
+  background-color: #f4f4f4;
+  width: 280px;
+  position: fixed;
+  top: 80px;
+  transform: translateX(-280px);
+  transition: 0.4s;
+  z-index: 1;
+}
+.slideIn:hover {
+  transform: translateX(0px);
+  transition: 0.4s;
+}
+
+.slideIn span {
+  font-size: 25px;
+  margin-bottom:5px;
+  border-bottom: 1px solid #030303;
+}
+.side-show {
+  position: relative;
+}
+.side-show p {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -175px;
+  bottom: 250px;
+  font-size: 25px;
+}
+.price-tag {
+  color: #f30808;
 }
 /* end of suzuki page */
+
 /* start of used bikes */
-.search-wrapper {
-	position:absolute;
-	top:90px;
-	left:10px;
-}
-.search-background {
-	background-color:#00425c;	
-	padding-bottom:4px;
-}
-.used-form select {
-	font-size:1.5em;
-	color:#fff;
-	margin:5px 0;
-	padding:5px 0;
-	display:block;
-	background-color:#00425c;
-	-webkit-appearance: none;
-	border:3px solid #00425c;
-	font-family:'Roboto', sans-serif;
-	width:110px;
 
+#search{
+  width:90%;
+  display:block;
+  margin:15px auto;
 }
-.used-form select:hover {
-	cursor: pointer;
-	border-bottom-color: #fff;
 
+.used-background {
+  min-height: 270px;
+  margin-top: 10px;
+  background-color: #003145;
+  height: 100%;
+  text-align: center;
 }
-.used-background{
-	min-height:270px;
-	margin-top:10px;
-	background-color:#003145;
-	height:100%;
-	text-align:center;
+.used-background img {
+  width: 50%;
+  float: left;
+  width: 500px;
+  padding-top: 10px;
+  margin-right: 5px;
 }
-.used-background img{
-	width: 50%;
-	float:left;
-	width:500px;
-	padding-top:10px;
-	margin-right:5px;
-}
-.used-background h2{
-	font-size:2em;
-	text-align: center;
-	color:#d8db38;
+.used-background h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #d8db38;
 }
 .used-para {
-	color:#fff;
-	font-size:0.6em;
-	padding-top:5px;	
-	line-height:1.3em;
+  color: #fff;
+  font-size: 0.6em;
+  padding-top: 5px;
+  line-height: 1.3em;
 }
-.h3{
-	color:#fff;
+.h3 {
+  color: #fff;
 }
-.enquire:hover{
-	background-color:#d8db38;
+.enquire:hover {
+  background-color: #d8db38;
 }
 .enquire {
-	background-color:#fff;
-	margin:10px 5px;
-	color:#030303;
-	border-radius:10px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	font-size:0.8em;
+  background-color: #fff;
+  margin: 10px 5px;
+  color: #030303;
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
 }
 /* end of used bikes */
 /* start of service */
 .service-img {
-	width:100%;
-	height:70vh;
+  width: 100%;
+  max-height: 70vh;
 }
 .service-background {
-	width:100%;
-	background-color:#003145;
-	color:#ffffff;
-	border-top:2px #fff solid;
+  width: 100%;
+  background-color: #003145;
+  color: #ffffff;
+  border-top: 2px #fff solid;
 }
 .service-background p {
-	padding:20px 30px 40px 30px;
+  padding: 20px 30px 40px 30px;
 }
 .service-list {
-	text-align: center;
+  text-align: center;
 }
 .service-bullets {
-	list-style: none;
-	padding:20px 0;
+  list-style: none;
+  padding: 20px 0;
 }
 .service-bullets li {
-	display:inline-block;
-	width:49%;
-	margin:5px 0;
-	padding:0;
+  display: inline-block;
+  width: 49%;
+  margin: 5px 0;
+  padding: 0;
 }
 .service-bullets li:before {
-	font-family:FontAwesome;
-	content:"\f00c";
-	margin:5px;
-	
+  font-family: FontAwesome;
+  content: "\f00c";
+  margin: 5px;
 }
 .service-background h2 {
-	text-align:center;
-	padding-top:20px;
-	color:#d8db38;
-	border-bottom:2px solid #d8db38;	
+  text-align: center;
+  padding-top: 20px;
+  color: #d8db38;
+  border-bottom: 2px solid #d8db38;
 }
 
 .services-tiles {
-	display:flex;
-	flex-wrap:wrap;
-	justify-content: center;
-	justify-content: space-around;
-	
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+
 }
 .panel-services {
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	 width:400px;
-	 height:400px;
-	 background-color:#f4f4f4;	
-	 background-position:center center;
-	 background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 400px;
+  height: 400px;
+  background-color: #f4f4f4;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.panel-services a {
+  border: 2px solid #00425c9a;
+  border-radius: 5px;
+  padding: 3px;
+  text-decoration: none;
 }
 
+.panel-services a:hover {
+  cursor: pointer;
+}
+.panel-services p {
+  margin-top: 10px;
+}
+.mot-backing {
+  display: none;
+  transition: all 0.4s;
+  transform: translateY(-173px);
+}
+.mot-backing-open {
+  display: block;
+  transition: all 0.4s;
+  z-index: 1;
+}
 /* end of services */
 /* start of shop */
 
@@ -294,81 +322,74 @@ body {
 /* start of contact */
 
 #map {
-    height: 500px;
-	width: 500px;
-	margin:10px 0 0 150px;
-	
+  height: 500px;
+  width: 500px;
+  margin: 10px 0 0 150px;
 }
-.form-contact{
-	margin:10px;
+.form-contact {
+  margin: 10px;
 }
-.form-contact input{
-	background-color:#f4f4f4;
-	border-radius: 5px;
+.form-contact input {
+  background-color: #f4f4f4;
+  border-radius: 5px;
 }
 .form-contact textarea {
-	background-color: #f4f4f4;
-	border-radius: 5px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
 }
 .form-contact h3 {
-	font-size:3em;
+  font-size: 3em;
 }
 .contact-wrapper form {
-	margin:10px 40px;
+  margin: 10px 40px;
 }
 /* end of contact */
 /* footer start */
 footer div {
-	background-color:#f4f4f4;
-	padding-top:5px;
-	padding-bottom:5px;
+  background-color: #f4f4f4;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 footer div ul li {
-	list-style:none;
-	margin:2px;
-	font-size:15px;
+  list-style: none;
+  margin: 2px;
+  font-size: 15px;
 }
 .footer-content {
-	text-align:center;
+  text-align: center;
 }
 .footer-content ul {
-	padding-left:0;
+  padding-left: 0;
 }
 footer div h3 {
-	margin-bottom:5px;
+  margin-bottom: 5px;
 }
 footer input {
-	border-radius:10px;
+  border-radius: 10px;
 }
 footer label {
-	font-size:20px;
+  font-size: 20px;
 }
 
 /* end of footer */
 
-
-
-
-
-
-
 /* social media css */
 .fa {
-    padding: 15px 5px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-	border-radius: 50%;
-	margin:10px;
+  padding: 15px 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 10px;
 }
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 .fa-instagram {
@@ -376,193 +397,207 @@ footer label {
   color: white;
 }
 .fa:hover {
-	opacity: 0.7;
-	text-decoration: none;
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 
 /* media queries */
 
 /* navbar */
-@media (max-width:375px) {
-	
-	
-	.used-background div > img{
-		width:100%;
-	}
-	.warranty{
-		display:none;
-	}
-	.dyno-logo{
-		width:100%;
-	}
-	#main-logo{
-		font-size:1.2em;
-	}
-	/* new suzuki */
-	.bike-background > span {
-		font-size:4em;
-	}
-	/* used motorcycles */
-	.used-para{
-		font-size:0.4em;
-	}
-	.search-background{
-		display:none;
-	}
-	/* services */
-	.service-bullets li{
-		width:100%;
-	}
-	/* contact */
-	.form-contact h3 {
-		font-size: 2em;	
-	}
-	#map{
-		margin:0;
-		padding:0;
-		height:350px;
-	}
-	.form-contact textarea{
-		width:100%;
-	}
+@media (max-width: 375px) {
+  .used-background div > img {
+    width: 100%;
+  }
+  .warranty {
+    display: none;
+  }
+  .dyno-logo {
+    width: 100%;
+  }
+  #main-logo {
+    font-size: 1.2em;
+  }
+  .side-show p {
+    font-size: 15px;
+    bottom: 235px;
+    right: -120px;
+  }
+  .fa-calculator {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .used-show p {
+	  display:none;
+  }
+
+  /* new suzuki */
+  .bike-background > span {
+    font-size: 4em;
+  }
+  /* used motorcycles */
+  .used-para {
+    font-size: 0.4em;
+  }
+  .search-background {
+    display: none;
+  }
+  .used-show p {
+	  display:none;
+  }
+  /* services */
+  .service-bullets li {
+    width: 100%;
+  }
+  /* contact */
+  .form-contact h3 {
+    font-size: 2em;
+  }
+  #map {
+    margin: 0;
+    padding: 0;
+    height: 350px;
+  }
+  .form-contact textarea {
+    width: 100%;
+  }
+  
 }
 
-@media screen and (max-width:576px) and (min-width:376px) {
-	/* index page */
-	#main-logo {
-		font-size:1.2em;
-		text-shadow:2px 2px #000384;	
-	}
-	.warranty{
-		left:5px;
-	}
-	.carousel-inner {
-		height:200px;
-	}
-	.first-description{
-		margin:10px 0;
-	}
-	.btn{
-		margin:10px 0;
-	}
-	.second-description{
-		margin-top:30px;
-	}
-	
-	.dyno-logo {
-		height:75px;
-	}
-	.second-carousel div > img {
-		display:none;
-	}
-	/* new suzuki */
+@media screen and (max-width: 576px) and (min-width: 376px) {
+  /* index page */
+  #main-logo {
+    font-size: 1.2em;
+    text-shadow: 2px 2px #000384;
+  }
+  .warranty {
+    left: 5px;
+  }
+  .carousel-inner {
+    height: 200px;
+  }
+  .first-description {
+    margin: 10px 0;
+  }
+  .btn {
+    margin: 10px 0;
+  }
+  .second-description {
+    margin-top: 30px;
+  }
 
-	.bike-background > span {
-		font-size: 6em;
-	}
-	.new-suzuki-tiles img{
-		height:200px;
-	}
-	/* used motorcycles */
-	.used-background{
-		height:100%;
-	}
-	.used-background img{
-		height:200px;
-		width:200px;
-	}
-	.used-background h2{
-		font-size:1.5em;
-	}
-	.used-background p{
-		font-size:.5em;
-		padding-top:5px;
-	}
-	.used-background .enquire{
-		width:150px;
-		height:20px;
-		font-size:.5em;
-	}
-	.h3{
-		font-size:1.5em;
-	}
-	.search-background {
-		display: none;
-	}
-	/* services */
-	.service-img{
-		object-fit: cover;
-	}
-	.services-images1 {
-		width:230px;
-		height:250px;
-		object-fit: contain;
-		position:absolute;
-		left:17%;
-		padding-bottom:15px;
-		
-	}
-	.services-images2{
-		width:200px;
-		height:200px;
-		object-fit: fill;
-		position:absolute;
-		left:17%;
-		padding-bottom:15px;
-	}
-	.services-images3{
-		width:200px;
-		height:200px;
-		object-fit: contain;
-		position:absolute;
-		left:17%;
-		padding-bottom:15px;
-	}
-	.service-bullets li {
-		width: 100%;
-	}
-	/* contact us  */
-	#map{
-	margin:0;
-	padding:0;
-	}
-	.form-contact > form{
-		padding:5px;
-		font-size:1em;
-	}
-	.contact-wrapper{
-		margin:0;
-	}
-	.form-contact textarea {
-		width:100%;
-	}
+  .dyno-logo {
+    height: 75px;
+  }
+  .second-carousel div > img {
+    display: none;
+  }
+  /* new suzuki */
+
+  .bike-background > span {
+    font-size: 6em;
+  }
+  .new-suzuki-tiles img {
+    height: 200px;
+  }
+  /* used motorcycles */
+  .used-background {
+    height: 100%;
+  }
+  .used-background img {
+    height: 200px;
+    width: 200px;
+  }
+  .used-background h2 {
+    font-size: 1.5em;
+  }
+  .used-background p {
+    font-size: 0.5em;
+    padding-top: 5px;
+  }
+  .used-background .enquire {
+    width: 150px;
+    height: 20px;
+    font-size: 0.5em;
+  }
+  .h3 {
+    font-size: 1.5em;
+  }
+  .search-background {
+    display: none;
+  }
+  /* services */
+  .service-img {
+    object-fit: cover;
+  }
+  .services-images1 {
+    width: 230px;
+    height: 250px;
+    object-fit: contain;
+    position: absolute;
+    left: 17%;
+    padding-bottom: 15px;
+  }
+  .services-images2 {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    position: absolute;
+    left: 17%;
+    padding-bottom: 15px;
+  }
+  .services-images3 {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    position: absolute;
+    left: 17%;
+    padding-bottom: 15px;
+  }
+  .service-bullets li {
+    width: 100%;
+  }
+  /* contact us  */
+  #map {
+    margin: 0;
+    padding: 0;
+  }
+  .form-contact > form {
+    padding: 5px;
+    font-size: 1em;
+  }
+  .contact-wrapper {
+    margin: 0;
+  }
+  .form-contact textarea {
+    width: 100%;
+  }
 }
-@media screen and (max-width:768px) and (min-width:576px) {
-	
-		.warranty{
-			left:5px;
-		}
-		.carousel-inner {
-			height: 400px;
-		}
-		.carousel-inner div img{
-			height:400px;
-		}
-		#map{
-			margin-right:100px;
-		}
-		
-}	
-@media (min-width:768px),(max-width:992px){
-	/* index page */
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .warranty {
+    left: 5px;
+  }
+  .carousel-inner {
+    max-height: 400px;
+  }
+  .carousel-inner div img {
+    max-height: 400px;
+  }
+  #map {
+    margin-right: 100px;
+  }
+}
+@media (min-width: 768px), (max-width: 992px) {
+  /* index page */
 
-	/* used bikes */
-	.used-background div > img {
-		width: 100%;
-		height:450px;
-	}
-	#map {
-		margin-right: 100px;
-	}
+  /* used bikes */
+  .used-background div > img {
+    width: 100%;
+    max-height: 450px;
+  }
+  #map {
+    margin-right: 100px;
+  }
+  
 }
