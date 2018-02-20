@@ -151,10 +151,10 @@ body {
 .slide-backing {
   justify-content: space-around;
 }
-.slideIn{
+.slideIn {
   background-color: #f4f4f4;
   width: 280px;
-  position: fixed;
+  position: absolute;
   top: 80px;
   transform: translateX(-280px);
   transition: 0.4s;
@@ -167,7 +167,7 @@ body {
 
 .slideIn span {
   font-size: 25px;
-  margin-bottom:5px;
+  margin-bottom: 5px;
   border-bottom: 1px solid #030303;
 }
 .side-show {
@@ -186,11 +186,17 @@ body {
 /* end of suzuki page */
 
 /* start of used bikes */
-
-#search{
-  width:90%;
-  display:block;
-  margin:15px auto;
+.used-bike-title {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -175px;
+  bottom: 120px;
+  font-size: 25px;
+}
+#search {
+  width: 90%;
+  display: block;
+  margin: 15px auto;
 }
 
 .used-background {
@@ -278,7 +284,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
-
+  position: relative;
 }
 .panel-services {
   display: flex;
@@ -306,17 +312,24 @@ body {
 }
 .mot-backing {
   display: none;
-  transition: all 0.4s;
+  top: 156px;
+  position: absolute;
   transform: translateY(-173px);
 }
 .mot-backing-open {
   display: block;
-  transition: all 0.4s;
+  transition: all 1s;
   z-index: 1;
 }
+.card-body {
+  transition: all 1s;
+}
+.card-body input {
+  width: 100%;
+}
+
 /* end of services */
 /* start of shop */
-
 
 /* end of shop */
 /* start of contact */
@@ -329,10 +342,6 @@ body {
 .form-contact {
   margin: 10px;
 }
-.form-contact input {
-  background-color: #f4f4f4;
-  border-radius: 5px;
-}
 .form-contact textarea {
   background-color: #f4f4f4;
   border-radius: 5px;
@@ -343,6 +352,12 @@ body {
 .contact-wrapper form {
   margin: 10px 40px;
 }
+.contact-btn {
+  background-color: #003145;
+  color: #fff;
+  border-radius: 5px;
+}
+
 /* end of contact */
 /* footer start */
 footer div {
@@ -401,7 +416,6 @@ footer label {
   text-decoration: none;
 }
 
-
 /* media queries */
 
 /* navbar */
@@ -429,7 +443,16 @@ footer label {
     padding: 0px;
   }
   .used-show p {
-	  display:none;
+    display: none;
+  }
+  .side-show p {
+    bottom: 420px;
+  }
+  #map {
+    margin: 0 !important;
+  }
+  .form-contact input {
+    width: 100%;
   }
 
   /* new suzuki */
@@ -444,7 +467,7 @@ footer label {
     display: none;
   }
   .used-show p {
-	  display:none;
+    display: none;
   }
   /* services */
   .service-bullets li {
@@ -462,7 +485,6 @@ footer label {
   .form-contact textarea {
     width: 100%;
   }
-  
 }
 
 @media screen and (max-width: 576px) and (min-width: 376px) {
@@ -560,8 +582,7 @@ footer label {
   }
   /* contact us  */
   #map {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
   }
   .form-contact > form {
     padding: 5px;
@@ -599,5 +620,4 @@ footer label {
   #map {
     margin-right: 100px;
   }
-  
 }

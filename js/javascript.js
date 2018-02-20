@@ -16,9 +16,10 @@ function initMap() {
 
 // MOT booker
 flatpickr("#motdate", {
-    dateFormat: "Y-m-d H:i",
-
+  dateFormat: "Y-m-d H:i",
+  minDate: "today"
 });
+
 flatpickr("#mottime", {
    
     enableTime: true,
@@ -27,20 +28,25 @@ flatpickr("#mottime", {
     minDate: "8:30",
     maxDate: "17:00",
 
+
 });
 
 // MOT booking form
 
-// let cardBody = document.querySelector(".mot-backing");
-// let motProcess = document.querySelector("#mot-show");
+let cardBody = document.querySelector(".mot-backing");
+let motProcess = document.querySelector("#mot-show");
+let motClose = document.querySelector(".close");
 
-// function motActive(e){
+function motActive(e){
+    cardBody.classList.add("mot-backing-open");
+}
+function motclose(e){
+    cardBody.classList.remove("mot-backing-open");
+}
 
-//     cardBody.classList.add("mot-backing-open");
+motProcess.addEventListener('click', motActive);
+motClose.addEventListener('click', motclose);
 
-// }
-
-// motProcess.addEventListener('click', motActive);
 
 
 // new suzuki animation
