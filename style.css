@@ -173,12 +173,19 @@ body {
 .side-show {
   position: relative;
 }
+
 .side-show p {
+  background-color: #f4f4f4;
+  border-radius: 5px;
   transform: rotate(-90deg);
   position: absolute;
-  right: -175px;
-  bottom: 250px;
+  right: -160px;
+  bottom: 370px;
   font-size: 25px;
+}
+.fa-calculator {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .price-tag {
   color: #f30808;
@@ -186,12 +193,35 @@ body {
 /* end of suzuki page */
 
 /* start of used bikes */
-.used-bike-title {
+.used-SlideIn {
+  background-color: #f4f4f4;
+  width: 280px;
+  position: absolute;
+  top: 60px;
+  transform: translateX(-280px);
+  transition: 0.4s;
+  z-index: 1;
+}
+.used-Slide-backing {
+  justify-content: space-around;
+}
+.used-SlideIn:hover {
+  transform: translateX(0px);
+  transition: 0.4s;
+}
+
+.used-bike-title p {
   transform: rotate(-90deg);
   position: absolute;
-  right: -175px;
+  right: -140px;
   bottom: 120px;
   font-size: 25px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+.fa-search {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 #search {
   width: 90%;
@@ -447,14 +477,18 @@ footer label {
   }
   .side-show p {
     bottom: 420px;
+    right: -129px;
   }
-  #map {
-    margin: 0 !important;
-  }
+  .slideIn {
+  top: 80px;
+ 
+}
   .form-contact input {
     width: 100%;
   }
-
+  .used-bike-title p {
+    display: none;
+  }
   /* new suzuki */
   .bike-background > span {
     font-size: 4em;
@@ -478,7 +512,7 @@ footer label {
     font-size: 2em;
   }
   #map {
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     height: 350px;
   }
@@ -549,6 +583,10 @@ footer label {
   .search-background {
     display: none;
   }
+  .used-bike-title p {
+    bottom: 125px;
+  }
+ 
   /* services */
   .service-img {
     object-fit: cover;

@@ -43,9 +43,12 @@ function motActive(e){
 function motclose(e){
     cardBody.classList.remove("mot-backing-open");
 }
-
-motProcess.addEventListener('click', motActive);
-motClose.addEventListener('click', motclose);
+if(motProcess){
+    motProcess.addEventListener('click', motActive);
+}
+if(motClose){
+    motClose.addEventListener('click', motclose);
+}
 
 
 
@@ -101,8 +104,9 @@ function financeNumbers(e) {
     // totalAmount.value = TotalAmount;
     
 }
-
-financeResults.addEventListener('click', financeNumbers);
+if(financeResults){
+    financeResults.addEventListener('click', financeNumbers);
+}
 
 
 
@@ -110,28 +114,34 @@ financeResults.addEventListener('click', financeNumbers);
 // bike filter
 
 
-const searchBtn = document.getElementById("search");
+// const searchBtn = document.getElementById("search");
 
-    function bikeSearch(e) {
-    e.preventDefault();        
+//     function bikeSearch(e) {
+//     e.preventDefault();        
     
-        console.log("hi");
-        // search fields
-        let bikeMake = document.getElementById("make");
-        let bikeModel = document.getElementById("model");
-        let price = document.getElementById("price");
-        let milageOption = document.getElementById("mile");
+//         // search fields
+//         let bikeMake = document.getElementById("make");
+//         let bikeModel = document.getElementById("model");
+//         let price = document.getElementById("price");
         
-        let bike = document.querySelectorAll(".Bike");
-        let bikePrice = document.querySelectorAll('.bikePrice');
+//         let bike = document.querySelectorAll(".Bike");
+//         let bikePrice = document.querySelectorAll('.bikePrice');
+//         let usedBackground = document.querySelectorAll(".used-background");
         
-        for  (let i = 0; i < bikeMake.length; i++){
-            if(bike[i] == bikeMake.value)
-                bikeBacking.style.display = " ";
-            else{
-                bikeBacking.style.display = "none";
-            }    
-        }
-    };
+            
+//         for  (let i = 0; i < bike.length; i++){
+//             console.log(bike);
 
+//             if(bike[i] == bikeMake.value){
+//             }
+        
+//             else{
+                
+//             }    
+//         }
+
+//     };
+
+// if(searchBtn){
 // searchBtn.addEventListener('click', bikeSearch);
+// }
