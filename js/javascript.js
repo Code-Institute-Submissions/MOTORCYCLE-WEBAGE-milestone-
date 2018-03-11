@@ -16,8 +16,8 @@ function initMap() {
 
 // MOT booker
 flatpickr("#motdate", {
-  dateFormat: "Y-m-d H:i",
-  minDate: "today"
+    dateFormat: "Y-m-d H:i",
+    minDate: "today",
 });
 
 flatpickr("#mottime", {
@@ -25,8 +25,8 @@ flatpickr("#mottime", {
     enableTime: true,
     noCalendar: true,
     dateFormat: "H:i",
-    minDate: "8:30",
-    maxDate: "17:00",
+    minTime: "8:30",
+    maxTime: "17:00",
 
 
 });
@@ -93,9 +93,10 @@ function financeNumbers(e) {
     const monthly = (months.value);
     const interestValue = (interest.value);
 
-    const interestAmount = ((interestValue / 100 * Amount) + Amount);
-    const interesttotal = ( interestAmount - Amount);
-    const monthlyRepayments = (interestAmount / monthly);
+    // const interestAmount = ((interestValue / 100 * Amount) + Amount);
+    const interestAmount = (Amount * Math.pow(1+(interestValue / 100) , monthly));
+    const interesttotal = (interestAmount - Amount);
+    const monthlyRepayments = (interestAmount / monthly / 12);
     // const TotalAmount = ((Amount - Deposit) / months + interestAmount);
     
     totalAmount.value =  monthlyRepayments.toFixed(2);
@@ -113,35 +114,39 @@ if(financeResults){
 
 // bike filter
 
+let searchBtn = document.getElementById("search");
 
-// const searchBtn = document.getElementById("search");
+if(searchBtn){
+    searchBtn.addEventListener('click', function(e) {
+        e.preventDefault();        
+        let bikeMake = document.getElementById("make").value.toUpperCase();
+        let bikeModel = document.getElementById("model").value.toUpperCase();
+        let price = document.getElementById("price").value.replace(/-/g, " " );
+        let bikePrice = document.getElementsByClassName("bikePrice");
+        let bike = document.getElementsByClassName("Bike");
+        let usedBackground = document.querySelectorAll(".used-background");
 
-//     function bikeSearch(e) {
-//     e.preventDefault();        
-    
-//         // search fields
-//         let bikeMake = document.getElementById("make");
-//         let bikeModel = document.getElementById("model");
-//         let price = document.getElementById("price");
-        
-//         let bike = document.querySelectorAll(".Bike");
-//         let bikePrice = document.querySelectorAll('.bikePrice');
-//         let usedBackground = document.querySelectorAll(".used-background");
-        
+           
+        for (let i = 0; i < bike.length; i++){
+            if (bike[i].innerHTML.toUpperCase().indexOf(bikeMake) !== -1 || bikeMake == "MAKE" ) {
+              usedBackground[i].style.display = "block";
+              
+            } else {
+              usedBackground[i].style.display = "none";
+            }
+        }
+
+        for(let i = 0; i < bikePrice.length; i++){
+            BikePrice = bikePrice[i].innerHTML.replace(/\W/g, "");
+            Price = price.split(" ");
             
-//         for  (let i = 0; i < bike.length; i++){
-//             console.log(bike);
+                if(BikePrice > Price[0] && BikePrice < Price[1]){
+                    usedBackground[i].style.display = "block";  
 
-//             if(bike[i] == bikeMake.value){
-//             }
-        
-//             else{
-                
-//             }    
-//         }
-
-//     };
-
-// if(searchBtn){
-// searchBtn.addEventListener('click', bikeSearch);
-// }
+                } else {
+                    usedBackground[i].style.display = "none";
+    
+                }
+            }        
+    });
+}
