@@ -1,6 +1,6 @@
 // google maps
 function initMap() {
-  var uluru = { lat: 50.8599851, lng: -0.9675234000000046 };
+  var uluru = { lat: 51.0577, lng: -1.3081 };
 
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
@@ -68,8 +68,7 @@ function bikeDisappear(e) {
 }
 
 triggers.forEach(trigger => trigger.addEventListener("mouseenter", bikeAppear));
-triggers.forEach(trigger =>
-  trigger.addEventListener("mouseleave", bikeDisappear)
+triggers.forEach(trigger => trigger.addEventListener("mouseleave", bikeDisappear)
 );
 
 // Finance calculator
@@ -110,48 +109,66 @@ if (financeResults) {
 // bike filter
 
 let searchBtn = document.getElementById("search");
+let bikeMake = document.getElementById("make");
+let bike = document.getElementsByClassName("Bike");
+let bikePrice = document.getElementsByClassName("bikePrice");
+let price = document.getElementById("price");
+let usedBackground = document.querySelectorAll(".used-background");
 
-function bikeMake() {
-  let bikeMake = document.getElementById("make").value.toUpperCase();
-  let bikeModel = document.getElementById("model").value.toUpperCase();
-  let bike = document.getElementsByClassName("Bike");
-  let usedBackground = document.querySelectorAll(".used-background");
+function bikeFilter(e) {
+  e.preventDefault();
+  val_bikeMake = bikeMake.value.toUpperCase();
+  val_Price = price.value.split("-");
 
   for (let i = 0; i < bike.length; i++) {
-    if (
-      bike[i].innerHTML.toUpperCase().indexOf(bikeMake) !== -1 ||
-      bikeMake == "MAKE"
-    ) {
-      usedBackground[i].style.display = "block";
-    } else {
-      usedBackground[i].style.display = "none";
-    }
-  }
-}
-function bikePrice() {
-  let usedBackground = document.querySelectorAll(".used-background");
-  let price = document.getElementById("price").value.replace(/-/g, " ");
-  let bikePrice = document.getElementsByClassName("bikePrice");
-
-  for (let i = 0; i < bikePrice.length; i++) {
     BikePrice = parseInt(bikePrice[i].innerHTML.replace(/\W/g, ""));
-    Price = price.split(" ");
 
-    if ((BikePrice > Price[0] && BikePrice < Price[1]) || Price == "price") {
-      usedBackground[i].style.display = "block";
-    } else {
-      usedBackground[i].style.display = "none";
+      if ((val_bikeMake === "MAKE" ||  bike[i].innerHTML.toUpperCase().indexOf(val_bikeMake) !== -1) &&
+          (val_Price[0] === "price" || BikePrice > val_Price[0] && BikePrice < val_Price[1]) )
+
+          
+          //(val_bikeMake && BikePrice > val_Price[0] && BikePrice < val_Price[1]) ||
+          //(val_Price && bike[i].innerHTML.toUpperCase().indexOf(val_bikeMake) !== -1)
+        
+        {
+        usedBackground[i].style.display = "block";
+        } else {
+        usedBackground[i].style.display = "none";
+
+      }
     }
-  }
 }
 
 if (searchBtn) {
-  searchBtn.addEventListener("click", function(e) {
-    e.preventDefault();
-    bikePrice();
-    bikeMake();
-  });
+  searchBtn.addEventListener("click", bikeFilter);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// function fn_bikePrice() {
+//   for (let i = 0; i < bikePrice.length; i++) {
+    
+//     if (usedBackground[i].style.display != "none"){ 
+//         if( (BikePrice > price.value.split("-")[0] && BikePrice < price.value.split("-")[1]) || 
+//             price.value.split("-") == "price"
+//           ) {
+//         usedBackground[i].style.display = "block";
+//     } else {
+//       usedBackground[i].style.display = "none";
+//       }
+//     }
+//   }
+
+
 
 // let searchBtn = document.getElementById("search");
 

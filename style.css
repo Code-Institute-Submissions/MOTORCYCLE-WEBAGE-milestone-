@@ -9,7 +9,7 @@ body {
 /* navbar section */
 .navbar {
   background-color: #003145;
-  height: 80px;
+  /* height: 80px; */
   border-bottom: 2px solid white;
   z-index: 17;
 }
@@ -197,10 +197,11 @@ body {
   background-color: #f4f4f4;
   width: 280px;
   position: absolute;
-  top: 60px;
-  /* transform: translateX(-280px); */
+  top: 70px;
+  transform: translateX(-280px);
   transition: 0.4s;
   z-index: 1;
+  height: 250px;
 }
 .used-Slide-backing {
   justify-content: space-around;
@@ -214,7 +215,7 @@ body {
   transform: rotate(-90deg);
   position: absolute;
   right: -140px;
-  bottom: 120px;
+  bottom: 87px;
   font-size: 25px;
   background-color: #f4f4f4;
   border-radius: 5px;
@@ -584,7 +585,10 @@ footer label {
     display: none;
   }
   .used-bike-title p {
-    bottom: 125px;
+    bottom: 88px;
+  }
+  .used-SlideIn {
+    top: 60px;
   }
  
   /* services */
@@ -645,6 +649,10 @@ footer label {
   }
   #map {
     margin-right: 100px;
+  }
+  
+  .used-bike-title p{
+    bottom: 88px;
   }
 }
 @media (min-width: 768px), (max-width: 992px) {
