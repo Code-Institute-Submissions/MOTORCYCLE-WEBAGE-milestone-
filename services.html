@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-
+    <link rel="icon" href="favicon.ico">
     <title>Hampshire Motorcycles</title>
 
-    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
-
-
-    <link href="style.css" rel="stylesheet">
+    
+    <link href="static/style.css" rel="stylesheet">
 
 </head>
 
@@ -42,9 +39,6 @@
                     </li>
                     <li class="nav-item  active">
                         <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="online-store.html">Online Store</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
@@ -95,8 +89,6 @@
 
                     <li>Tracker approved installer</li>
                 </ul>
-            </div>
-            <hr class="divider"></hr>
         </section>
         <section class="second-wrapper">
             <div class="container services-tiles flex-container">
@@ -118,9 +110,8 @@
                                 <label>Bike Registration</label>
                                 <input type="text" placeholder="Bike Registration" required>
                                 <label>Select Date</label>
-                                <input class="flatpickr" type="text" placeholder="Select Date.." id="motdate" required>
-                                <label>Select time</label>
-                                <input class="flatpickr" type="text" placeholder="Select Time.." id="mottime" required>
+                                <input class="date" type="text" placeholder="00/00/0000">
+                                
                             </form>
                             <a href="#" class="btn btn-danger mt-3">Book MOT</a>
                         </div>
@@ -141,11 +132,10 @@
             </div>
         </section>
     </article>
-    <hr class="divider"></hr>
     <footer>
         <div class="container footer-background">
             <div class="row footer-content">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-ms-6 col-sm-6">
                     <ul>
                         <li>
                             <h3>Contact us</h3>
@@ -157,7 +147,7 @@
                         <li>02392 998334</li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-ms-6 col-sm-6">
                     <ul>
                         <li>
                             <h3>Opening Hours</h3>
@@ -171,7 +161,7 @@
                         <li>Sunday - closed</li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-ms-12 col-sm-12">
                     <h3>Social Media</h3>
                     <span>
                         <a href="#" class="fa fa-facebook"></a>
@@ -193,15 +183,14 @@
                 </div>
             </div>
         </div>
-        <p>&copy; Russell Treagus</p>
+        <p class="copyright">&copy; Russell Treagus</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/flatpickr/dist/flatpickr.min.js"></script>
-    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="static/javascript.js"></script>
 </body>
 
 </html>

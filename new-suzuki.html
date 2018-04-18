@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <title>Hampshire Motorcycles</title>
 
-    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="static/style.css" rel="stylesheet">
 
 </head>
 
@@ -41,9 +41,6 @@
                         <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="online-store.html">Online Store</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
@@ -53,6 +50,10 @@
     <!-- NAVBAR END -->
     <section class="section-one">
         <div class="bike-background">
+            <div class="side-show">
+                <p class="financeBacking"><a class="finance"href="#">Finance Calculator</a>    
+                </p>
+            </div>
             <span class="bike-display">Sports Bikes</span>
             <div class="sports-background">
                 <div class="container new-suzuki-tiles">
@@ -311,7 +312,7 @@
         <form>
             <div class="container slideIn">
                 <div class="row slide-backing">
-                    <span>Finance Calculator</span>
+                    <h4 class="mt-2">Finance Calculator</h4>
                     <label for="form-control"> £ Price of Motorcycle</label>
                     <input type="number" id="price" class="form-control" min="0" placeholder="Enter price">
                     <label>£ Your deposit amount</label>
@@ -324,26 +325,27 @@
                         <option value="2">24</option>
                         <option value="3">36</option>
                     </select>
-                    <input id="Finance" type="submit" class="btn btn-block btn-dark mt-2">
+                    <input id="Finance" type="submit" class="btn btn-block btn-dark mt-2 finance-btn">
 
                     <h4 class="mt-2">Results</h4>
 
+                    <label for="monthly">Monthly Repayments</label>
                     <input type="text" id="monthly" class="form-control" placeholder="Monthly payments" disabled>
+                    <label for="interestTotal">Total Interest Amount</label>
                     <input type="text" id="interestTotal" class="form-control mt-2" placeholder="Interest total" disabled>
+                    <label for="repayment">Total Repayments</label>
                     <input type="text" id="repayment" class="form-control mt-2" placeholder="Total amount" disabled>
-                </div>
-                <div class="side-show">
-                    <p>
-                        <i class="fa fa-calculator" aria-hidden="true"></i> Finance Calculator
-                    </p>
                 </div>
             </div>
         </form>
+        <div>
+            <i class="fa fa-window-close cancel-backing" aria-hidden="true"></i>
+        </div>
     </section>
     <footer>
-        <div class="container footer-background">
+        <div class="container">
             <div class="row footer-content">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-ms-6 col-sm-6">
                     <ul>
                         <li>
                             <h3>Contact us</h3>
@@ -355,7 +357,7 @@
                         <li>02392 998334</li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-ms-6 col-sm-6">
                     <ul>
                         <li>
                             <h3>Opening Hours</h3>
@@ -369,7 +371,7 @@
                         <li>Sunday - closed</li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-ms-12 col-sm-12">
                     <h3>Social Media</h3>
                     <span>
                         <a href="#" class="fa fa-facebook"></a>
@@ -394,11 +396,11 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/flatpickr/dist/flatpickr.min.js"></script>
-    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script type="text/javascript" src="static/javascript.js"></script>
 </body>
 
 </html>

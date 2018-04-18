@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <title>Hampshire Motorcycles</title>
 
-    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link href="static/style.css" rel="stylesheet">
 
 </head>
 
@@ -40,9 +40,6 @@
                         <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="online-store.html">Online Store</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
@@ -50,45 +47,45 @@
         </nav>
     </header>
     <!-- NAVBAR END -->
-    <aside class="container used-SlideIn">
-        <form class="row used-Slide-backing">
-            <span>Used Bike Search</span>
-            <div class="col-lg-12 text-center">
-                <label>Make</label>
-                <select id="make" name="Make" class="form-control">
-                    <option value="make">Make</option>
-                    <option value="Suzuki">Suzuki</option>
-                    <option value="Honda">Honda</option>
-                    <option value="Kawasaki">Kawasaki</option>
-                    <option value="BMW">BMW</option>
-                    <option value="Triumph">Triumph</option>
-                    <option value="Ducati">Ducati</option>
-                </select>
-            </div>
-            <div class="col-lg-12 text-center">
-                <label>Price</label>
-                <select id="price" name="Price" class="form-control">
-                    <option value="price">Price</option>
-                    <option value="0-4999">0 - 4999</option>
-                    <option value="5000-9999">5000 - 9999</option>
-                    <option value="10000-14999">10,000 - 14,999</option>
-                    <option value="15000-99999">15,000+</option>
-                </select>
-            </div>
-            <div class="col-lg-12 text-center">
-                <input id="search" type="submit" class="btn btn-block btn-danger">
-            </div>
-            <div class="used-bike-title">
-                <p>
-                    <i class="fa fa-search" aria-hidden="true"></i> Used Bike Search
-                </p>
+    <section >
+        <form class="container used-SlideIn">
+            <div class="row used-Slide-backing">
+                <h4 class="mt-2">Used Bike Search</h4>
+                <div class="col-lg-12 text-center">
+                    <label>Make</label>
+                    <select id="make" name="Make" class="form-control">
+                        <option value="make">Make</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Kawasaki">Kawasaki</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Triumph">Triumph</option>
+                        <option value="Ducati">Ducati</option>
+                    </select>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <label>Price</label>
+                    <select id="price" name="Price" class="form-control">
+                        <option value="price">Price</option>
+                        <option value="0-4999">0 - 4999</option>
+                        <option value="5000-9999">5000 - 9999</option>
+                        <option value="10000-14999">10,000 - 14,999</option>
+                        <option value="15000-99999">15,000+</option>
+                    </select>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <input id="search" type="submit" class="btn btn-block btn-danger">
+                </div>
             </div>
         </form>
-
-
-    </aside>
+        <div>
+            <i class="fa fa-window-close usedCancelBacking" aria-hidden="true"></i>
+        </div>
+    </section>
     <article class="used-wrapper">
         <section>
+            <p class="container usedSearchBacking">
+                <a class="usedFilter" href="#">Search Used Motorcycles</a>
+            </p>
             <div class="container used-background">
                 <div>
                     <img src="photos/usedbikes/ducati.jpeg" alt="ducati">
@@ -103,7 +100,7 @@
                                     to Saturday 9.00am till 5.30pm. Nation Wide Delivery and Collection, HPI Clear, Part
                                     Exchange Welcome, Best Finance Rates Available.Check us out on facebook.
                                     <br>
-                                    <button class="enquire">Enquire</button>
+                                    <a href="contact.html"><button class="btn btn-secondary btn-sm mt-3 enquire" href="contact.html">Enquire</button></a>
                                 </p>
                             </div>
                 </div>
@@ -121,7 +118,7 @@
                                 Saturday 9.00am till 5.30pm. Nation Wide Delivery and Collection, HPI Clear, Part Exchange
                                 Welcome, Best Finance Rates Available.Check us out on facebook.
                                 <br>
-                                <button class="enquire">Enquire</button>
+                                <a href="contact.html"><button class="btn btn-secondary btn-sm mt-3 enquire">Enquire</button></a>
                             </p>
                 </div>
             </div>
@@ -139,7 +136,7 @@
                                 Saturday 9.00am till 5.30pm. Nation Wide Delivery and Collection, HPI Clear, Part Exchange
                                 Welcome, Best Finance Rates Available, Check us out on Facebook.
                                 <br>
-                                <button class="enquire">Enquire</button>
+                                <a href="contact.html"><button class="btn btn-secondary btn-sm mt-3 enquire">Enquire</button></a>
                             </p>
                 </div>
             </div>
@@ -157,7 +154,7 @@
                                 Collection, HPI Clear, Part Exchange Welcome, Best Finance Rates Available.Check us out on
                                 facebook.
                                 <br>
-                                <button class="enquire">Enquire</button>
+                                <a href="contact.html">button class="btn btn-secondary btn-sm mt-3 enquire">Enquire</button></a><
                             </p>
                 </div>
             </div>
@@ -175,7 +172,7 @@
                                 Collection, HPI Clear, Part Exchange Welcome, Best Finance Rates Available.Check us out on
                                 facebook.
                                 <br>
-                                <button class="enquire">Enquire</button>
+                                <a href="contact.html"><button class="btn btn-secondary btn-sm mt-3 enquire">Enquire</button></a>
                             </p>
                 </div>
             </div>
@@ -194,7 +191,7 @@
                                 Collection, HPI Clear, Part Exchange Welcome, Best Finance Rates Available.Check us out on
                                 facebook.
                                 <br>
-                                <button class="enquire">Enquire</button>
+                                <a href="contact.html"><button class="btn btn-secondary btn-sm mt-3 enquire">Enquire</button></a>
                             </p>
                 </div>
             </div>
@@ -203,7 +200,7 @@
     <footer>
         <div class="container footer-background">
             <div class="row footer-content">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-ms-6 col-sm-6">
                     <ul>
                         <li>
                             <h3>Contact us</h3>
@@ -215,7 +212,7 @@
                         <li>02392 998334</li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-ms-6 col-sm-6">
                     <ul>
                         <li>
                             <h3>Opening Hours</h3>
@@ -229,7 +226,7 @@
                         <li>Sunday - closed</li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-ms-12 col-sm-12">
                     <h3>Social Media</h3>
                     <span>
                         <a href="#" class="fa fa-facebook"></a>
@@ -251,15 +248,15 @@
                 </div>
             </div>
         </div>
-        <p>&copy; Russell Treagus</p>
+        <p class="copyright">&copy; Russell Treagus</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/flatpickr/dist/flatpickr.min.js"></script>
-    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script type="text/javascript" src="static/javascript.js"></script>
 </body>
 
 </html>

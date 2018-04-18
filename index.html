@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+     
     <title>Hampshire Motorcycles</title>
+    <link rel="icon" href="favicon.ico">
 
-    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link href="static/style.css" rel="stylesheet">
 
 </head>
 
@@ -41,9 +42,6 @@
                         <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="online-store.html">Online Store</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
@@ -52,7 +50,6 @@
     </header>
     <!-- NAVBAR END -->
     <section class- "main-section">
-        <img class="warranty" src="photos/3yrwarranty.jpg" alt="warranty">
         <!-- Photo slider starts-->
         <div class="container">
             <div class="row">
@@ -64,23 +61,23 @@
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item first-slider active">
                                 <img class="d-block w-100" src="photos/gsxrfrontwheel.jpg" alt="First slide">
                                 <div class="carousel-caption">
-                                    <h5>A RANGE OF SUZUKI MODELS NOW ON 3% APR REPRESENTATIVE</h5>
+                                    <span class="para-background">A RANGE OF SUZUKI MODELS NOW ON 3% APR REPRESENTATIVE</span>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item first-slider">
                                 <img class="d-block w-100" src="photos/quickshifter.jpg" alt="Second slide">
                                 <div class="carousel-caption">
-                                    <h5>ALL USED MOTORCYCLES COME WITH OUR ONE YEAR WARRANTY</h5>
+                                    <span class="para-background">ALL USED MOTORCYCLES COME WITH OUR ONE YEAR WARRANTY</span>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item first-slider">
                                 <img class="d-block w-100" src="photos/exhaust.jpg" alt="Third slide">
                                 <div class="container">
                                     <div class="carousel-caption">
-                                        <h5>WE SERVICE ALL MAKES AND MODELS WITH GENUINE PARTS</h5>
+                                        <span class="para-background">WE SERVICE ALL MAKES AND MODELS WITH GENUINE PARTS</span>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +112,7 @@
         <div class="container about-backing">
             <div class="row">
                 <div class="about-us col-lg-12">
-                    <h2>About Us</h2>
+                    <h2>Hampshire Motorcycles</h2>
                     <p>We have been providing excellent to our customers for over 10 years. We specialise in Suzuki Motorcycles
                         and have a collection of used motorcycles. We have a Dyno to set up your motorcycle for peak performance
                         and fuelling efficiently. Have a great selection of parts and accessories. We have Master Technician
@@ -132,37 +129,34 @@
 
 
         <!-- Listing for catogories -->
-
-        <hr class="first-divider">
-
-        <div id="dyno-banner" class="carousel slide" data-ride="carousel">
-            <div class="second-carousel container">
+        <div id="dyno-slider" class="carousel slide container" data-ride="carousel">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="photos/dyno/qs.jpg" alt="First slide">
+                    <img class="d-block w-100 dyno-image" src="photos/dyno/auto-tune.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="photos/dyno/auto-tune.jpg" alt="Second slide">
+                    <img class="d-block w-100 dyno-image" src="photos/dyno/ignition.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="photos/dyno/ignition.jpg" alt="Third slide">
+                    <img class="d-block w-100 dyno-image" src="photos/dyno/qs.jpg" alt="Third slide">
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="row dyno-para col-lg-12">
+            <div class="row col-lg-12">
                 <img class="dyno-logo" src="photos/dyno/dyno.jpeg" alt="dyno logo">
-                <p>We specialise in getting the most power and fuel efficiency out of your motorcycle be fitting the latest
+                <p class="dyno-para">We specialise in getting the most power and fuel efficiency out of your motorcycle be fitting the latest
                     power commander and putting in onto our dyno. We also fit all the accessories that dyno supply from quick
                     shifter to power vision displays. contact us today for more details.</p>
             </div>
         </div>
         <!-- end if listing -->
-
+        <hr class="first-divider">
         <!-- FOOTER -->
         <footer>
             <div class="container footer-background">
                 <div class="row footer-content">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-ms-6 col-sm-6">
                         <ul>
                             <li>
                                 <h3>Contact us</h3>
@@ -174,7 +168,7 @@
                             <li>02392 998334</li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-ms-6 col-sm-6">
                         <ul>
                             <li>
                                 <h3>Opening Hours</h3>
@@ -188,7 +182,7 @@
                             <li>Sunday - closed</li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-ms-12 col-sm-12">
                         <h3>Social Media</h3>
                         <span>
                             <a href="#" class="fa fa-facebook"></a>
@@ -210,16 +204,16 @@
                     </div>
                 </div>
             </div>
-            <p>&copy; Russell Treagus</p>
+            <p class="copyright">&copy; Russell Treagus</p>
         </footer>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/flatpickr/dist/flatpickr.min.js"></script>
-    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script type="text/javascript" src="static/javascript.js"></script>
 </body>
 
 </html>
