@@ -10,9 +10,8 @@
     <title>Hampshire Motorcycles</title>
 
     <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <link href="static/style.css" rel="stylesheet">
 
 </head>
@@ -21,11 +20,10 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a id="main-logo" class="navbar-brand" href="#">Hampshire Motorcycles</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -53,13 +51,20 @@
             <img class="service-img" src="photos/servicebackground.jpg" alt="service background">
             <div class="container service-background">
                 <h2>Hampshire Motorcycles Service and Aftersales Department</h2>
-                <p>We have a dedicated team of manufacturer-trained technicians, who offer the utmost friendly and professional
-                    service. Each technician attends regular training to ensure they are fully up to date with specifications
-                    of each manufacturer, so you can rely on us to maintain your motorcycle keeping it in peak condition.
-                    With the recent workshop refurbishment, each Technician now has state of the art work bays with efficiently
-                    designed benches and tool cabinets to house their extensive range of tools. We quality control all of
-                    our work to strict policies which enables us to pride ourselves on the exceptional level of service we
-                    provide. As an Insurance Approved repairer, we provide a free estimation service, so if you have recently
+                <p>We have a dedicated team of manufacturer-trained technicians, who offer the utmost friendly and
+                    professional
+                    service. Each technician attends regular training to ensure they are fully up to date with
+                    specifications
+                    of each manufacturer, so you can rely on us to maintain your motorcycle keeping it in peak
+                    condition.
+                    With the recent workshop refurbishment, each Technician now has state of the art work bays with
+                    efficiently
+                    designed benches and tool cabinets to house their extensive range of tools. We quality control all
+                    of
+                    our work to strict policies which enables us to pride ourselves on the exceptional level of service
+                    we
+                    provide. As an Insurance Approved repairer, we provide a free estimation service, so if you have
+                    recently
                     had an accident and are seeking a quotation, don’t hesitate to contact us. Our services include:
                 </p>
             </div>
@@ -103,17 +108,16 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <h5 class="card-title">MOT Booking Form</h5>
-                            <form action="">
+                            <form class="motBookingForm">
                                 <label>Full Name</label>
                                 <input type="text" placeholder="Full name" required>
                                 <br>
                                 <label>Bike Registration</label>
                                 <input type="text" placeholder="Bike Registration" required>
-                                <label>Select Date</label>
-                                <input class="date" type="text" placeholder="00/00/0000">
-                                
+                                <label>Date of MOT</label>
+                                <input class="flatpickr" type="text" placeholder="Date for MOT" required>
+                                <button type="button" class="btn btn-success" onclick="bookMOT()">Book</button>
                             </form>
-                            <a href="#" class="btn btn-danger mt-3">Book MOT</a>
                         </div>
                     </div>
                 </div>
@@ -185,11 +189,14 @@
         </div>
         <p class="copyright">&copy; Russell Treagus</p>
     </footer>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script type="text/javascript" src="static/javascript.js"></script>
 </body>
 

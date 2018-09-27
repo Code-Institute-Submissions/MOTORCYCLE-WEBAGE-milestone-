@@ -13,11 +13,11 @@ function initMap() {
   });
 }
 
-// MOT booking form
+// <------------------ MOT booking form ----------------->
 
-let cardBody = document.querySelector(".mot-backing");
-let motProcess = document.querySelector("#mot-show");
-let motClose = document.querySelector(".close");
+let cardBody = document.querySelector(".mot-backing"),
+  motProcess = document.querySelector("#mot-show"),
+  motClose = document.querySelector(".close");
 
 function motActive(e) {
   cardBody.classList.add("mot-backing-open");
@@ -32,7 +32,36 @@ if (motClose) {
   motClose.addEventListener("click", motclose);
 }
 
-// new suzuki animation
+//<------------------  mot booking form ----------------->
+
+flatpickr(".flatpickr", {
+  enableTime: true,
+  minTime: "08:30",
+  maxTime: "17:00",
+  minDate: "today",
+  disable: [
+    function(date) {
+      // return true to disable
+      return date.getDay() === 1 || date.getDay() === 0;
+    }
+  ],
+  locale: {
+    firstDayOfWeek: 1 // start week on Monday
+  }
+});
+
+let motBook = document.querySelector(".date"),
+  motBikeReg = document.querySelector(".bikeReg"),
+  motName = document.querySelector("name"),
+  motForm = document.getElementsByClassName(".motBookingForm"),
+  motBtn = document.querySelector(".motBtn");
+
+function bookMOT(e){
+  console.log("hello")
+}
+
+
+// < --------------  new suzuki animation --------------->
 
 const triggers = document.querySelectorAll(".tiles-background > span");
 const infoBox = document.querySelector(".bike-description");
@@ -55,11 +84,9 @@ function bikeDisappear(e) {
 }
 
 triggers.forEach(trigger => trigger.addEventListener("mouseenter", bikeAppear));
-triggers.forEach(trigger =>
-  trigger.addEventListener("mouseleave", bikeDisappear)
-);
+triggers.forEach(trigger =>trigger.addEventListener("mouseleave", bikeDisappear));
 
-// Finance calculator
+// <---------------- Finance calculator -------------------->
 
 const financeResults = document.getElementById("Finance");
 
@@ -91,7 +118,7 @@ if (financeResults) {
   financeResults.addEventListener("click", financeNumbers);
 }
 
-// bike filter
+// <---------------------- bike filter ---------------------->
 
 let searchBtn = document.getElementById("search");
 let bikeMake = document.getElementById("make");
@@ -125,20 +152,18 @@ if (searchBtn) {
   searchBtn.addEventListener("click", bikeFilter);
 }
 
-//Finance calculator appear
+//<------------------ Show Finance calculator ----------------------->
 
 let financeCalc = document.querySelector(".finance");
 let slideIn = document.querySelector(".slideIn");
 let cancel = document.querySelector(".cancel-backing");
 
 function financeShow(e) {
-  slideIn.classList.toggle("showSlide"),
-  cancel.classList.toggle("timesShow");
+  slideIn.classList.toggle("showSlide"), cancel.classList.toggle("timesShow");
 }
 
 function closeFinance(e) {
-  cancel.classList.remove("timesShow"),
-  slideIn.classList.remove("showSlide");
+  cancel.classList.remove("timesShow"), slideIn.classList.remove("showSlide");
 }
 
 if (financeCalc) {
@@ -148,7 +173,7 @@ if (cancel) {
   cancel.addEventListener("click", closeFinance);
 }
 
-//Used bike filter appear
+//<------------------ Used bike filter appear -------------------->
 
 let usedBacking = document.querySelector(".used-Slide-backing");
 let usedSlideIn = document.querySelector(".used-SlideIn");
@@ -167,19 +192,20 @@ function closeUsedBike(e) {
 
 if (usedButton) {
   usedButton.addEventListener("click", usedShow);
-} 
+}
 if (usedButton) {
   usedCancel.addEventListener("click", closeUsedBike);
 }
 
 let contactBtn = document.querySelector(".contact-btn");
 
-if(contactBtn){
-  contactBtn.addEventListener("click", function(e){
-        alert(" On form submit, an email would be send to the dealership")
+if (contactBtn) {
+  contactBtn.addEventListener("click", function(e) {
+    alert(" On form submit, an email would be send to the dealership");
   });
 }
 
 if (contactBtn) {
   contactBtn.addEventListener("click", function() {});
 }
+
