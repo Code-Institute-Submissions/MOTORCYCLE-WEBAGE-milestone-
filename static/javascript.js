@@ -50,16 +50,34 @@ flatpickr(".flatpickr", {
   }
 });
 
-let motBook = document.querySelector(".date"),
+let motBook = document.querySelector(".flatpickr"),
   motBikeReg = document.querySelector(".bikeReg"),
-  motName = document.querySelector("name"),
-  motForm = document.getElementsByClassName(".motBookingForm"),
+  motName = document.querySelector(".name"),
   motBtn = document.querySelector(".motBtn");
 
-function bookMOT(e){
-  console.log("hello")
-}
+function bookMOT(e) {
+  if (motBook.value != "" && motBikeReg.value != "" && motName.value != "") {
+    
+    var booking = `NAME: ${motName.value} BIKE: ${motBikeReg.value} DATE: ${motBook.value}`;
+  
+    let bookings;
 
+    if (localStorage.getItem("bookings") === null) {
+      bookings = [];
+    } 
+    else {
+      bookings = JSON.parse(localStorage.getItem("bookings", booking));
+    }
+
+    bookings.push(booking);
+
+    localStorage.setItem("bookings", JSON.stringify(bookings));
+
+    alert("Your MOT is all booked!");
+
+    document.getElementById("motForm").submit();
+  }
+}
 
 // < --------------  new suzuki animation --------------->
 
@@ -84,7 +102,9 @@ function bikeDisappear(e) {
 }
 
 triggers.forEach(trigger => trigger.addEventListener("mouseenter", bikeAppear));
-triggers.forEach(trigger =>trigger.addEventListener("mouseleave", bikeDisappear));
+triggers.forEach(trigger =>
+  trigger.addEventListener("mouseleave", bikeDisappear)
+);
 
 // <---------------- Finance calculator -------------------->
 
@@ -204,8 +224,3 @@ if (contactBtn) {
     alert(" On form submit, an email would be send to the dealership");
   });
 }
-
-if (contactBtn) {
-  contactBtn.addEventListener("click", function() {});
-}
-
