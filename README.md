@@ -1,16 +1,17 @@
-#####Final-project stream one - By Russell Treagus
+Final-project stream one - By Russell Treagus
 
-#Hampshire Motorcycles Webpage
+Hampshire Motorcycles Webpage
 ---
-##Overview
-***Who is the webpage designed for??***         
+#Overview
+
+**Who is the webpage designed for??**       
 This webpage would be used by a motorcycle dealership to help get customers into there showroom or by contact through the site itself. They can display all there motorcycles that they have to offer from new and used motorcycles.
 Customers can follow the dealership for news and updates by following there social media pages and youtube.
 
 
 
 ---
-###Features
+#Features
 *   Home Page - Front page to showcase the motorcycles dealerhip.
 *   New motorcycles - Customers can look at the new motorcycles on offer and use the finance calculator for monthly payments.
 *   Used motorcycles - Dealership can display there used bike range and customers can filter through the bikes.
