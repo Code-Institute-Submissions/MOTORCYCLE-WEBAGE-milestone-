@@ -14,7 +14,8 @@ footer {
   margin-top: 5px;
   background-color: #00425c;
 }
-/* navbar section */
+/* <--------- navbar section ----------> */
+
 .navbar {
   background-color: #003145;
   /* height: 80px; */
@@ -41,8 +42,8 @@ footer {
   padding: 0;
 }
 
-/* end of navbar */
-/* index page start */
+
+/* <---------- index page start ----------->*/
 
 #main-logo {
   color: #d8db38;
@@ -104,8 +105,7 @@ footer {
   border: 2px #fff solid;
 }
 
-/* end of index page */
-/* start new suzuki */
+/*<------------- start new suzuki --------------->*/
 
 .section-one {
   text-align: center;
@@ -142,7 +142,7 @@ footer {
   width: 50%;
 }
 
-/* modal / finance calc */
+/*<--------- modal / finance calc ---------->*/
 .trigger-enter .bike-description {
   display: block;
 }
@@ -230,9 +230,8 @@ footer {
 .price-tag {
   color: #f30808;
 }
-/* end of suzuki page */
 
-/* start of used bikes */
+/*<-------- start of used bikes --------->*/
 .used-SlideIn {
   background-color: #f4f4f4;
   width: 280px;
@@ -292,14 +291,12 @@ footer {
 }
 
 .used-background {
-  /* min-height: 270px; */
   margin-top: 10px;
   background-color: #003145;
   height: 100%;
   text-align: center;
 }
 .used-background img {
-  /* width: 50%; */
   float: left;
   width: 500px;
   padding-top: 10px;
@@ -320,8 +317,7 @@ footer {
   color: #fff;
 }
 
-/* end of used bikes */
-/* start of service */
+/*<--------- start of service ---------->*/
 .service-img {
   width: 100%;
   max-height: 70vh;
@@ -405,11 +401,7 @@ footer {
   width: 100%;
 }
 
-/* end of services */
-/* start of shop */
-
-/* end of shop */
-/* start of contact */
+/*<---------- start of contact -----------> */
 
 #map {
   height: 500px;
@@ -445,8 +437,8 @@ footer {
   width: 100%;
 }
 
-/* end of contact */
-/* footer start */
+
+/*<---------- footer start --------->*/
 footer div {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -474,9 +466,8 @@ footer label {
   font-size: 20px;
 }
 
-/* end of footer */
+/*<----------- social media css ---------->*/
 
-/* social media css */
 .fa {
   padding: 15px 5px;
   font-size: 30px;
@@ -503,7 +494,7 @@ footer label {
   text-decoration: none;
 }
 
-/* media queries */
+/* <--------- media queries --------->*/
 
 /* navbar */
 @media (max-width: 375px) {
@@ -728,7 +719,6 @@ footer label {
   }
 }
 @media (min-width: 768px), (max-width: 992px) {
-  /* index page */
 
   /* used bikes */
   .used-background div > img {
