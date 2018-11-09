@@ -57,15 +57,15 @@ let motBook = document.querySelector(".flatpickr"),
 
 function bookMOT(e) {
   if (motBook.value != "" && motBikeReg.value != "" && motName.value != "") {
-    
-    var booking = `NAME: ${motName.value} BIKE: ${motBikeReg.value} DATE: ${motBook.value}`;
-  
+    var booking = `NAME: ${motName.value} BIKE: ${motBikeReg.value} DATE: ${
+      motBook.value
+    }`;
+
     let bookings;
 
     if (localStorage.getItem("bookings") === null) {
       bookings = [];
-    } 
-    else {
+    } else {
       bookings = JSON.parse(localStorage.getItem("bookings", booking));
     }
 
