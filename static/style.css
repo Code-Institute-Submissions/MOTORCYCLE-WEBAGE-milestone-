@@ -390,7 +390,7 @@ footer {
 }
 .mot-backing {
   display: none;
-  top: 156px;
+  top: 165px;
   position: absolute;
   transform: translateY(-135px);
 }
@@ -542,7 +542,7 @@ footer label {
     bottom: 115px;
   }
   .used-title {
-    font-size: 100px;1
+    font-size: 100px;
   }
   .slideIn {
     top: 80px;
@@ -553,11 +553,14 @@ footer label {
   }
 
   /* new suzuki */
+  .bike-description {
+    margin: auto;
+  }
   .bike-background > span {
     font-size: 4em;
   }
   .slideIn {
-  top: 90px;
+  top: 65px;
 }
   /* used motorcycles */
   .used-para {

@@ -50,34 +50,41 @@ flatpickr(".flatpickr", {
   }
 });
 
-let motBook = document.querySelector(".flatpickr"),
-  motBikeReg = document.querySelector(".bikeReg"),
-  motName = document.querySelector(".name"),
-  motBtn = document.querySelector(".motBtn");
 
-function bookMOT(e) {
-  if (motBook.value != "" && motBikeReg.value != "" && motName.value != "") {
-    var booking = `NAME: ${motName.value} BIKE: ${motBikeReg.value} DATE: ${
-      motBook.value
-    }`;
 
-    let bookings;
+let motShow = document.getElementById('mot-show');
 
-    if (localStorage.getItem("bookings") === null) {
-      bookings = [];
-    } else {
-      bookings = JSON.parse(localStorage.getItem("bookings", booking));
+if(motShow){
+  motBtn = document.getElementById("bookMot").addEventListener("click", bookMOT);
+  let motBook = document.querySelector(".flatpickr"),
+      motBikeReg = document.querySelector(".bikeReg"),
+      motName = document.querySelector(".name");
+
+  function bookMOT(e) {
+    if(motBook != "" && motBikeReg != "" && motName != ""){
+      var booking = `NAME: ${motName.value} BIKE: ${motBikeReg.value} DATE: ${
+        motBook.value
+      }`;
+  
+      let bookings;
+  
+      if (localStorage.getItem("bookings") === null) {
+        bookings = [];
+      } else {
+        bookings = JSON.parse(localStorage.getItem("bookings", booking));
+      }
+  
+      bookings.push(booking);
+      
+      localStorage.setItem("bookings", JSON.stringify(bookings));
+  
+      alert("Your MOT is all booked!");
+  
+      document.getElementById("motForm").submit();
     }
-
-    bookings.push(booking);
-
-    localStorage.setItem("bookings", JSON.stringify(bookings));
-
-    alert("Your MOT is all booked!");
-
-    document.getElementById("motForm").submit();
   }
 }
+
 
 // < --------------  new suzuki animation --------------->
 
