@@ -61,7 +61,8 @@ if(motShow){
       motName = document.querySelector(".name");
 
   function bookMOT(e) {
-    if(motBook != "" && motBikeReg != "" && motName != ""){
+
+    if (motName.value.length != 0 && motBikeReg.value.length != 0 && motName.value.length != 0){
       var booking = `NAME: ${motName.value} BIKE: ${motBikeReg.value} DATE: ${
         motBook.value
       }`;
@@ -81,7 +82,10 @@ if(motShow){
       alert("Your MOT is all booked!");
   
       document.getElementById("motForm").submit();
+    }else{
+      alert("Missing information")
     }
+  
   }
 }
 
