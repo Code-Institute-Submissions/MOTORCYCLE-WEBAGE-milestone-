@@ -60,12 +60,31 @@ footer {
   max-height: 400px;
 }
 
-.first-advertise {
+.first-description {
   background-color: #00425c;
   color: white;
   padding-top: 20px;
   border-top: 2px solid white;
   text-align: center;
+}
+.para-one {
+  animation-name: first;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+.para-two {
+  animation-name: second;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes first {
+    0%{transform: translateX(-1000px)}
+    100%{transform: translateX(0px)}
+}
+@keyframes second {
+    0%{transform: translateX(1000px)}
+    100%{transform: translateX(0px)}
 }
 .first-advertise h2 {
   color: #d8db38;
@@ -421,10 +440,7 @@ footer {
 .form-contact select {
   width:100%;
 }
-.form-contact textarea {
-  background-color: #f4f4f4;
-  border-radius: 5px;
-}
+
 .form-contact h3 {
   font-size: 3em;
   text-align: center;
@@ -468,17 +484,19 @@ footer input {
 footer label {
   font-size: 20px;
 }
-
+.footer-content h3 {
+    text-decoration: underline;
+}
 /*<----------- social media css ---------->*/
 
 .fa {
   padding: 15px 5px;
   font-size: 30px;
-  width: 50px;
+  width: 55px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  margin: 10px;
+  margin: 6px;
 }
 .fa-facebook {
   background: #3b5998;
@@ -699,6 +717,7 @@ footer label {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 768px) and (min-width: 576px) {
   .carousel-inner {
     max-height: 400px;
@@ -712,7 +731,8 @@ footer label {
     margin:auto;
   }
   .form-contact {
-    margin: 0 194px 0 194px;
+    margin: auto;
+    width: 100%;
   }
   .used-bike-title p {
     bottom: 88px;

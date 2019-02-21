@@ -58,11 +58,12 @@ if(motShow){
   motBtn = document.getElementById("bookMot").addEventListener("click", bookMOT);
   let motBook = document.querySelector(".flatpickr"),
       motBikeReg = document.querySelector(".bikeReg"),
+      motNum = document.querySelector(".num"),
       motName = document.querySelector(".name");
 
   function bookMOT(e) {
 
-    if (motName.value.length != 0 && motBikeReg.value.length != 0 && motName.value.length != 0){
+    if (motName.value.length != 0 && motNum.value.length != 0 && motName.value.length != 0){
       var booking = `NAME: ${motName.value} BIKE: ${motBikeReg.value} DATE: ${
         motBook.value
       }`;
@@ -83,7 +84,7 @@ if(motShow){
   
       document.getElementById("motForm").submit();
     }else{
-      alert("Missing information")
+      alert("All fields required!")
     }
   
   }
@@ -92,9 +93,9 @@ if(motShow){
 
 // < --------------  new suzuki animation --------------->
 
-const triggers = document.querySelectorAll(".tiles-background > span");
-const infoBox = document.querySelector(".bike-description");
-const background = document.querySelector(".tiles-background");
+const triggers = document.querySelectorAll(".tiles-background > span"),
+    infoBox = document.querySelector(".bike-description"),
+    background = document.querySelector(".tiles-background");
 
 function bikeAppear(e) {
   this.classList.add("trigger-enter");
@@ -151,12 +152,12 @@ if (financeResults) {
 
 // <---------------------- bike filter ---------------------->
 
-let searchBtn = document.getElementById("search");
-let bikeMake = document.getElementById("make");
-let bike = document.getElementsByClassName("Bike");
-let bikePrice = document.getElementsByClassName("bikePrice");
-let price = document.getElementById("price");
-let usedBackground = document.querySelectorAll(".used-background");
+let searchBtn = document.getElementById("search"),
+    bikeMake = document.getElementById("make"),
+    bike = document.getElementsByClassName("Bike"),
+    bikePrice = document.getElementsByClassName("bikePrice"),
+    price = document.getElementById("price"),
+    usedBackground = document.querySelectorAll(".used-background");
 
 function bikeFilter(e) {
   e.preventDefault();
@@ -185,9 +186,9 @@ if (searchBtn) {
 
 //<------------------ Show Finance calculator ----------------------->
 
-let financeCalc = document.querySelector(".finance");
-let slideIn = document.querySelector(".slideIn");
-let cancel = document.querySelector(".cancel-backing");
+let financeCalc = document.querySelector(".finance"),
+    slideIn = document.querySelector(".slideIn"),
+    cancel = document.querySelector(".cancel-backing");
 
 function financeShow(e) {
   slideIn.classList.toggle("showSlide"), cancel.classList.toggle("timesShow");
