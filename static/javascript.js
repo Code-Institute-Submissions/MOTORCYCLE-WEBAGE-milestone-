@@ -56,18 +56,21 @@ let motShow = document.getElementById('mot-show');
 
 if(motShow){
   motBtn = document.getElementById("bookMot").addEventListener("click", bookMOT);
-  let motBook = document.querySelector(".flatpickr"),
-      motBikeReg = document.querySelector(".bikeReg"),
-      motNum = document.querySelector(".num"),
-      motName = document.querySelector(".name");
 
   function bookMOT(e) {
+    let  motBook = document.querySelector(".flatpickr"),
+         motBikeReg = document.querySelector(".bikeReg"),
+         motNum = document.querySelector(".number"),
+         motName = document.querySelector(".name");
 
-    if (motName.value.length != 0 && motNum.value.length != 0 && motName.value.length != 0){
-      var booking = `NAME: ${motName.value} BIKE: ${motBikeReg.value} DATE: ${
-        motBook.value
-      }`;
-  
+    if (motName.value.length != 0 &&
+        motNum.value.length != 0 &&
+        motBikeReg.value.length != 0 &&
+        motBook.value.length != 0){
+
+      var booking = `NAME: ${motName.value} NO: ${motNum.value} BIKE: ${motBikeReg.value} DATE: ${
+        motBook.value}`;
+
       let bookings;
   
       if (localStorage.getItem("bookings") === null) {
