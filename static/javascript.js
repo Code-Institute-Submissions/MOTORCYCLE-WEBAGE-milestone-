@@ -13,7 +13,7 @@ function initMap() {
   });
 }
 
-// <------------------ MOT booking form ----------------->
+// MOT booking form
 
 let cardBody = document.querySelector(".mot-backing"),
   motProcess = document.querySelector("#mot-show"),
@@ -32,7 +32,7 @@ if (motClose) {
   motClose.addEventListener("click", motclose);
 }
 
-//<------------------  mot booking form ----------------->
+// Mot booking form
 
 flatpickr(".flatpickr", {
   enableTime: true,
@@ -94,7 +94,7 @@ if(motShow){
 }
 
 
-// < --------------  new suzuki animation --------------->
+// New suzuki animation
 
 const triggers = document.querySelectorAll(".tiles-background > span"),
     infoBox = document.querySelector(".bike-description"),
@@ -121,7 +121,7 @@ triggers.forEach(trigger =>
   trigger.addEventListener("mouseleave", bikeDisappear)
 );
 
-// <---------------- Finance calculator -------------------->
+// Finance calculator
 
 const financeResults = document.getElementById("Finance");
 
@@ -153,7 +153,7 @@ if (financeResults) {
   financeResults.addEventListener("click", financeNumbers);
 }
 
-// <---------------------- bike filter ---------------------->
+// Bike filter
 
 let searchBtn = document.getElementById("search"),
     bikeMake = document.getElementById("make"),
@@ -187,7 +187,7 @@ if (searchBtn) {
   searchBtn.addEventListener("click", bikeFilter);
 }
 
-//<------------------ Show Finance calculator ----------------------->
+// Show Finance calculator
 
 let financeCalc = document.querySelector(".finance"),
     slideIn = document.querySelector(".slideIn"),
@@ -208,7 +208,7 @@ if (cancel) {
   cancel.addEventListener("click", closeFinance);
 }
 
-//<------------------ Used bike filter appear -------------------->
+// Used bike filter appear
 
 let usedBacking = document.querySelector(".used-Slide-backing");
 let usedSlideIn = document.querySelector(".used-SlideIn");

@@ -14,7 +14,7 @@ footer {
   margin-top: 5px;
   background-color: #00425c;
 }
-/* <--------- navbar section ----------> */
+/* navbar section */
 
 .navbar {
   background-color: #003145;
@@ -43,7 +43,7 @@ footer {
 }
 
 
-/* <---------- index page start ----------->*/
+/* index page start */
 
 #main-logo {
   color: #d8db38;
@@ -124,7 +124,7 @@ footer {
   border: 2px #fff solid;
 }
 
-/*<------------- start new suzuki --------------->*/
+/* start new suzuki */
 
 .section-one {
   text-align: center;
@@ -161,7 +161,8 @@ footer {
   width: 50%;
 }
 
-/*<--------- modal / finance calc ---------->*/
+/* modal / finance calc */
+
 .trigger-enter .bike-description {
   display: block;
 }
@@ -170,7 +171,6 @@ footer {
   opacity: 1;
   transition: all 0.4s;
 }
-
 .bike-description {
   background-color: #f4f4f4;
   border: 0.5px solid #bbb7b7;
@@ -250,7 +250,8 @@ footer {
   color: #f30808;
 }
 
-/*<-------- start of used bikes --------->*/
+/* start of used bikes */
+
 .used-SlideIn {
   background-color: #f4f4f4;
   width: 280px;
@@ -268,7 +269,6 @@ footer {
 .used-Slide-backing {
   justify-content: space-around;
 }
-
 .usedSlideOpen {
   transform: translateX(0px);
   transition: 0.4s all;
@@ -302,13 +302,11 @@ footer {
 .fa-times:before {
   font-size: 25px;
 }
-
 #search {
   width: 90%;
   display: block;
   margin: 15px auto;
 }
-
 .used-background {
   margin-top: 10px;
   background-color: #003145;
@@ -336,7 +334,8 @@ footer {
   color: #fff;
 }
 
-/*<--------- start of service ---------->*/
+/* start of service */
+
 .service-img {
   width: 100%;
   max-height: 70vh;
@@ -375,7 +374,6 @@ footer {
   color: #d8db38;
   border-bottom: 2px solid #d8db38;
 }
-
 .services-tiles {
   display: flex;
   flex-wrap: wrap;
@@ -400,7 +398,6 @@ footer {
   padding: 3px;
   text-decoration: none;
 }
-
 .panel-services a:hover {
   cursor: pointer;
 }
@@ -420,7 +417,7 @@ footer {
   width: 100%;
 }
 
-/*<---------- start of contact -----------> */
+/* start of contact */
 
 #map {
   height: 500px;
@@ -440,7 +437,6 @@ footer {
 .form-contact select {
   width:100%;
 }
-
 .form-contact h3 {
   font-size: 3em;
   text-align: center;
@@ -453,14 +449,13 @@ footer {
   width: 100%;
 }
 
+/* footer start */
 
-/*<---------- footer start --------->*/
 footer div {
   padding-top: 5px;
   padding-bottom: 5px;
   color: white;
 }
-
 footer div ul li {
   list-style: none;
   margin: 2px;
@@ -487,7 +482,8 @@ footer label {
 .footer-content h3 {
     text-decoration: underline;
 }
-/*<----------- social media css ---------->*/
+
+/* social media css */
 
 .fa {
   padding: 15px 5px;
@@ -515,7 +511,7 @@ footer label {
   text-decoration: none;
 }
 
-/* <--------- media queries --------->*/
+/*  media queries */
 
 /* navbar */
 @media (max-width: 375px) {
