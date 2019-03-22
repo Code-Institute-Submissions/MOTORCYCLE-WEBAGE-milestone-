@@ -111,6 +111,7 @@ footer {
 }
 .dyno-para {
     font-size: 1.3em;
+    text-align: center;
 }
 .btn {
     display: inline-block;
@@ -408,7 +409,9 @@ footer {
     width: 100%;
     margin: auto;
 }
-
+.map-wrapper{
+    margin: auto;
+}
 .form-contact {
     margin: 10px;
 }
@@ -566,6 +569,9 @@ footer label {
   /* services */
   .service-bullets li {
     width: 100%;
+  }
+  .panel-services{
+    text-align: center;
   }
   /* contact */
   .form-contact h3 {
